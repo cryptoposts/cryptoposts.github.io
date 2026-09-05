@@ -1,14 +1,13 @@
-/* theme.css — per-site design tokens (generated from design.json). Swapping design = swapping THIS file. */
 :root{
-  --bg:#101311; --surface:#171B18; --elevated:#1E2420;
-  --text:#F2EFE5; --muted:#AEB8AE; --border:#3E4740;
-  --accent:#F4A340; --accent-ink:#191108;
-  --font-display:"Newsreader", Georgia, serif;
+  --bg:#0B0D0E; --surface:#121617; --elevated:#1A2021;
+  --text:#F4F1E8; --muted:#AEB6B2; --border:#35403D;
+  --accent:#C7F36A; --accent-ink:#101508;
+  --font-display:"Instrument Serif", Georgia, serif;
   --font-body:"IBM Plex Sans", Arial, sans-serif;
   --radius:2px;
   --maxw:1240px;
-  --gap:1.05rem;
-  --pad-section:3rem;
-  --lh:1.62;
+  --gap:1.5rem;
+  --pad-section:4.5rem;
+  --lh:1.7;
   color-scheme:dark;
 }

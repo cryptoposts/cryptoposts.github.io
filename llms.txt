@@ -1,7 +1,9 @@
-# Digest
-
-crypto news and analysis.
-
+# Block Signal
+Block Signal is an independent crypto news publication.
+It covers markets, protocol upgrades, governance, security, token launches, and on-chain activity.
+The publication explains what changed, who is affected, and why it matters.
 ## Key pages
-- https://cryptoposts.github.io/
-- https://cryptoposts.github.io/about/
+- Home: https://cryptoposts.github.io/
+- About: https://cryptoposts.github.io/about/
+## Editorial focus
+Clear reporting and practical context beneath the market noise.

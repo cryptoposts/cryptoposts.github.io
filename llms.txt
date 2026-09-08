@@ -1,11 +1,10 @@
-# Crypto Infrastructure Ledger
-> Independent crypto infrastructure news and analysis for validators and node operators.
+# Crypto Flow Monitor
 
-Coverage follows client releases, validator economics, hardware, networking, signing keys, and recovery.
-Stories explain implementation choices and their operating consequences.
+> Independent crypto news and on-chain analysis for active traders.
+
+Coverage: exchange flows, stablecoins, DEX liquidity, token supply and on-chain leverage.
+Editorial approach: lead with measurable changes and distinguish observed flows from inferred intent.
 
 ## Key pages
-- [Homepage](https://cryptoposts.github.io/): Latest reporting and analysis.
-- [About](https://cryptoposts.github.io/about/): Editorial mission, sourcing, independence, and corrections.
-
-Reporting distinguishes firsthand tests from externally reported results.
+- [Homepage](https://cryptoposts.github.io/): Latest coverage and analysis.
+- [About](https://cryptoposts.github.io/about/): Newsroom identity, sourcing and corrections policy.

@@ -1,9 +1,11 @@
-# Block Signal
-Block Signal is an independent crypto news publication.
-It covers markets, protocol upgrades, governance, security, token launches, and on-chain activity.
-The publication explains what changed, who is affected, and why it matters.
+# Crypto Infrastructure Ledger
+> Independent crypto infrastructure news and analysis for validators and node operators.
+
+Coverage follows client releases, validator economics, hardware, networking, signing keys, and recovery.
+Stories explain implementation choices and their operating consequences.
+
 ## Key pages
-- Home: https://cryptoposts.github.io/
-- About: https://cryptoposts.github.io/about/
-## Editorial focus
-Clear reporting and practical context beneath the market noise.
+- [Homepage](https://cryptoposts.github.io/): Latest reporting and analysis.
+- [About](https://cryptoposts.github.io/about/): Editorial mission, sourcing, independence, and corrections.
+
+Reporting distinguishes firsthand tests from externally reported results.

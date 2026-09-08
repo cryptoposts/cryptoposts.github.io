@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" data-mode="light">
+<html lang="en" data-mode="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Liquidity-Based Withdrawal Requests Explained | Block Signal</title>
+<title>Liquidity-Based Withdrawal Requests Explained</title>
 <meta name="description" content="Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.">
 <link rel="canonical" href="https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-<meta name="theme-color" content="#f5f4f2">
-<meta name="author" content="Mara Velez"><meta property="og:type" content="article">
-<meta property="og:site_name" content="Block Signal">
+<meta name="theme-color" content="#201e1b">
+<meta name="author" content="The Crypto Infrastructure Ledger Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Infrastructure Ledger">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="How Liquidity-Based Withdrawals Actually Settle">
 <meta property="og:description" content="Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.">
@@ -21,13 +21,15 @@
 <meta name="twitter:title" content="How Liquidity-Based Withdrawals Actually Settle">
 <meta name="twitter:description" content="Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.">
 <meta property="article:published_time" content="2026-09-08T07:34:53">
+<meta property="article:section" content="Validator rewards, penalties, and operating costs"><meta property="article:tag" content="Validator rewards, penalties, and operating costs">
+<meta property="article:tag" content="Signing keys and failover design">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=Inter:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="/assets/s39798c7594.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/saf925cc7e3.css">
 <link rel="icon" href="/assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="alternate" type="application/rss+xml" title="Block Signal" href="/feed.xml"><script type="application/ld+json">
+<link rel="alternate" type="application/rss+xml" title="Crypto Infrastructure Ledger" href="/feed.xml"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -35,7 +37,7 @@
       "@type": "WebPage",
       "@id": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/#webpage",
       "url": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/",
-      "name": "Liquidity-Based Withdrawal Requests Explained | Block Signal",
+      "name": "Liquidity-Based Withdrawal Requests Explained",
       "isPartOf": {
         "@id": "https://cryptoposts.github.io/#website"
       },
@@ -57,11 +59,13 @@
       "author": {
         "@type": "Organization",
         "@id": "https://cryptoposts.github.io/#org",
-        "name": "Mara Velez"
+        "name": "The Crypto Infrastructure Ledger Editors"
       },
       "publisher": {
         "@id": "https://cryptoposts.github.io/#org"
       },
+      "keywords": "Validator rewards, penalties, and operating costs, Signing keys and failover design",
+      "articleSection": "Validator rewards, penalties, and operating costs",
       "wordCount": 611,
       "image": {
         "@type": "ImageObject",
@@ -90,7 +94,7 @@
     {
       "@type": "Organization",
       "@id": "https://cryptoposts.github.io/#org",
-      "name": "Block Signal",
+      "name": "Crypto Infrastructure Ledger",
       "url": "https://cryptoposts.github.io/",
       "logo": {
         "@type": "ImageObject",
@@ -100,48 +104,65 @@
     {
       "@type": "WebSite",
       "@id": "https://cryptoposts.github.io/#website",
-      "name": "Block Signal",
+      "name": "Crypto Infrastructure Ledger",
       "url": "https://cryptoposts.github.io/",
       "publisher": {
         "@id": "https://cryptoposts.github.io/#org"
       },
       "inLanguage": "en",
-      "description": "Block Signal covers crypto markets, protocol upgrades, and on-chain shifts with clear reporting for readers who want context before the next market move."
+      "description": "Independent crypto reporting for validators and node operators, tracing client upgrades, hardware costs, and the work of keeping networks running."
     }
   ]
 }
 </script>
 </head>
 <body data-page="post">
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-head">
-  <div class="wrap head-inner">
-    <a class="brand" href="/" aria-label="Block Signal — home">
-      <span class="brand-mark" aria-hidden="true">B</span>
-      <span class="brand-name">Block Signal</span>
-    </a>
+<a class="s68c8e15" href="#main">Skip to content</a>
+<header class="sdc23b0c">
+  <div class="s4fc3c51">
+    <div class="s886d05c">
+      <div class="sc3a820e">
+        <a class="sf727ab7" href="/">
+          <span class="s244f9b3" aria-hidden="true">CL</span>
+          <span class="s7fcde21">Crypto Infrastructure Ledger</span>
+        </a>
+      </div>
+      <div class="sfa85d20">
+        <p>Crypto Infrastructure Ledger covers client releases, validator economics, and outage recovery for validators and node operators. We follow changes from build to deployment, examining the configuration, hardware bill, and recovery work behind each claim that a network has improved.</p>
+      </div>
+    </div>
+    <nav class="s28d547c" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/privacy/">Privacy policy</a>
+      <a href="/archive/">All posts</a>
+      <a href="/topics/client-releases-and-upgrade-rehearsals/">Client releases and upgrade rehearsals</a>
+      <a href="/topics/validator-rewards-penalties-and-operating-costs/">Validator rewards, penalties, and operating costs</a>
+      <a href="/topics/outage-reconstruction-and-recovery/">Outage reconstruction and recovery</a>
+      <a href="/topics/signing-keys-and-failover-design/">Signing keys and failover design</a>
+    </nav>
   </div>
 </header>
 
 <main id="main">
-<article class="article">
-  <header class="article-head wrap">
-    <p class="signal-strip">crypto</p>
-    <div class="article-title">
-      <p class="article-section">crypto market report</p>
-      <h1>How Liquidity-Based Withdrawals Actually Settle</h1>
-      <p class="article-dek">Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.</p>
-      <p class="article-meta">By Mara Velez <span>·</span> <time datetime="2026-09-08T07:34:53">Sep 8, 2026</time> <span>·</span> 3 min read</p>
+<article class="s4fc3c51 s6881e55">
+  <header class="sd65ab5d">
+    <p class="s5a4e6dd"><span class="s3f5aa74" aria-hidden="true">CL</span> crypto</p>
+    <h1 class="s14e2f7b">How Liquidity-Based Withdrawals Actually Settle</h1>
+    <p class="s10e267c">Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.</p>
+    <div class="s4ed104a">
+      <span>By The Crypto Infrastructure Ledger Editors</span>
+      <time datetime="2026-09-08T07:34:53">Sep 8, 2026</time>
+      <span>3 min read</span>
     </div>
   </header>
 
-  <figure class="article-cover wrap">
-    <img src="/assets/covers/how-liquidity-based-withdrawals-actually-settle.jpg" alt="How Liquidity-Based Withdrawals Actually Settle">
+  <figure class="s3c21047">
+    <img src="/assets/covers/how-liquidity-based-withdrawals-actually-settle.jpg" alt="How Liquidity-Based Withdrawals Actually Settle" width="1200" height="630" decoding="async" fetchpriority="high">
   </figure>
 
-  <div class="article-layout wrap">
-    <div class="prose">
-      <p>Liquidity-based withdrawal requests settle by matching a holder’s redemption against immediately available cash or sellable assets, with any shortfall pushed into a queue, a haircut, or both. The key actor is the liquidity manager: its allocation decisions determine whether a withdrawal is routine or becomes a timed transfer of market risk to the person asking for their money.</p>
+  <div class="s9b714d4">
+    <div class="se5ff55c"><p>Liquidity-based withdrawal requests settle by matching a holder’s redemption against immediately available cash or sellable assets, with any shortfall pushed into a queue, a haircut, or both. The key actor is the liquidity manager: its allocation decisions determine whether a withdrawal is routine or becomes a timed transfer of market risk to the person asking for their money.</p>
 
 <p>This structure appears in lending markets, yield vaults, liquid staking systems, private-credit tokens, and protocols that divide assets into liquid and illiquid pools. A user is not always withdrawing a fixed pile of coins. They are often burning shares and asking the system to convert a proportional claim into an amount of a settlement asset, usually a stablecoin.</p>
 
@@ -181,39 +202,37 @@
 
 <blockquote><p>A withdrawal promise is only as strong as the assets that can be sold when everyone asks at once.</p></blockquote>
 
-<p>The verdict is straightforward: liquidity-based withdrawal systems do not eliminate redemption risk; they schedule, price, and assign it. Users should inspect the reserve ratio, queue rules, valuation timestamp, withdrawal cap, and loss waterfall before treating a liquid-looking token as cash.</p>
-    </div>
+<p>The verdict is straightforward: liquidity-based withdrawal systems do not eliminate redemption risk; they schedule, price, and assign it. Users should inspect the reserve ratio, queue rules, valuation timestamp, withdrawal cap, and loss waterfall before treating a liquid-looking token as cash.</p></div>
 
-    <aside class="article-rail">
-      <div class="article-rail-inner">
-        <p class="signal-strip">Filed under</p>
-      </div>
-    </aside>
+    <section class="sb589159" aria-labelledby="cl-tags-heading">
+      <h2 id="cl-tags-heading" class="s9b4bcb6"><span class="s3f5aa74" aria-hidden="true">CL</span> Filed under</h2>
+      <ul class="s0253c3f">
+        <li>Validator rewards, penalties, and operating costs</li>
+        <li>Signing keys and failover design</li>
+      </ul>
+    </section>
+
+    <section class="s166146f" aria-labelledby="cl-related-heading">
+      <h2 id="cl-related-heading" class="s9b4bcb6"><span class="s3f5aa74" aria-hidden="true">CL</span> Related reporting</h2>
+      <ol class="s2a659ab">
+        <li><a href="/cross-chain-swaps-trade-assets-transfers-move-them/">Cross-Chain Swaps Trade Assets; Transfers Move Them</a></li>
+        <li><a href="/me-network-v2-0-17-passes-vote-putting-nodes-on-a-clock/">ME Network V2.0.17 passes vote, putting nodes on a clock</a></li>
+      </ol>
+    </section>
   </div>
-
-  <section class="related wrap">
-    <div class="section-head">
-      <p class="signal-strip">Continue tracking</p>
-      <h2>Related reporting</h2>
-    </div>
-    <ul class="related-list">
-      <li><a href="/cross-chain-swaps-trade-assets-transfers-move-them/">Cross-Chain Swaps Trade Assets; Transfers Move Them</a></li>
-    </ul>
-  </section>
 </article>
 </main>
 
-<footer class="site-foot">
-  <div class="wrap foot-inner">
-    <div class="foot-brand"><span class="brand-mark small" aria-hidden="true">B</span> Block Signal</div>
-    <nav class="foot-nav" aria-label="Sections">
-<a href="/">Home</a>
-<a href="/about/">About us</a>
-<a href="/privacy/">Privacy policy</a>
-<a href="/archive/">All posts</a>
-    </nav>
-    <p class="foot-note">Block Signal is an independent publication not affiliated with or endorsed by any protocol, exchange, or project it covers, and nothing published here is financial advice.</p>
-    <p class="foot-meta">© 2026 Block Signal</p>
+<footer class="s83c35a3">
+  <div class="s4fc3c51">
+    <div class="sd6a6667">
+      <a class="s8387639" href="/">
+        <span class="s244f9b3 scbc5adc" aria-hidden="true">CL</span>
+        <span>Crypto Infrastructure Ledger</span>
+      </a>
+      <p class="s0612c59">© 2026 Crypto Infrastructure Ledger</p>
+    </div>
+    <p class="s51e2885">Crypto Infrastructure Ledger is an independent publication, not affiliated with or endorsed by any protocol, exchange, or project it covers; nothing here is financial advice.</p>
   </div>
 </footer>
 </body>

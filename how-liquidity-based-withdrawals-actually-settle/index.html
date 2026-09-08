@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquidity-Based Withdrawal Requests Explained | Block Signal</title>
+<meta name="description" content="Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.">
+<link rel="canonical" href="https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0B0D0E">
+<meta name="author" content="Mara Velez"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Block Signal">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Liquidity-Based Withdrawals Actually Settle">
+<meta property="og:description" content="Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.">
+<meta property="og:url" content="https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/how-liquidity-based-withdrawals-actually-settle.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Liquidity-Based Withdrawals Actually Settle"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Liquidity-Based Withdrawals Actually Settle">
+<meta name="twitter:description" content="Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.">
+<meta property="article:published_time" content="2026-09-08T07:34:53">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+<link rel="stylesheet" href="/assets/s0d2d382429.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Block Signal" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/#webpage",
+      "url": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/",
+      "name": "Liquidity-Based Withdrawal Requests Explained | Block Signal",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/#article",
+      "headline": "How Liquidity-Based Withdrawals Actually Settle",
+      "isAccessibleForFree": true,
+      "description": "Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.",
+      "datePublished": "2026-09-08T07:34:53",
+      "dateModified": "2026-09-08T07:34:53",
+      "url": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptoposts.github.io/#org",
+        "name": "Mara Velez"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 611,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/how-liquidity-based-withdrawals-actually-settle.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Liquidity-Based Withdrawals Actually Settle",
+          "item": "https://cryptoposts.github.io/how-liquidity-based-withdrawals-actually-settle/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Block Signal",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Block Signal",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Block Signal covers crypto markets, protocol upgrades, and on-chain shifts with clear reporting for readers who want context before the next market move."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/" aria-label="Block Signal — home">
+      <span class="brand-mark" aria-hidden="true">BS</span>
+      <span class="brand-name">Block Signal</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+<article class="article">
+  <header class="article-hero">
+    <a class="article-hero__return" href="/">← Back to the current</a>
+
+    <div class="article-hero__classification">
+      <span>crypto</span>
+      <span>crypto / Analysis</span>
+    </div>
+
+    <h1>How Liquidity-Based Withdrawals Actually Settle</h1>
+    <p class="article-hero__dek">Liquidity-based withdrawals are paid from available cash and executable positions, while queues, haircuts, and delays transfer risk to the requester.</p>
+
+    <div class="article-hero__meta">
+      <div>
+        <span class="meta-label">Published</span>
+        <time datetime="2026-09-08T07:34:53">Sep 8, 2026</time>
+      </div>
+      <div>
+        <span class="meta-label">Reading time</span>
+        <span>3 min read</span>
+      </div>
+      <div>
+        <span class="meta-label">Desk</span>
+        <span>Block Signal</span>
+      </div>
+    </div>
+
+    <figure class="article-cover">
+      <img src="/assets/covers/how-liquidity-based-withdrawals-actually-settle.jpg" alt="">
+    </figure>
+  </header>
+
+  <div class="article-layout">
+    <aside class="article-rail">
+      <p class="article-rail__label">Filed under</p>
+      
+
+      <div class="article-rail__byline">
+        <span class="meta-label">Published by</span>
+        <strong>Mara Velez</strong>
+      </div>
+    </aside>
+
+    <div class="prose">
+      <p>Liquidity-based withdrawal requests settle by matching a holder’s redemption against immediately available cash or sellable assets, with any shortfall pushed into a queue, a haircut, or both. The key actor is the liquidity manager: its allocation decisions determine whether a withdrawal is routine or becomes a timed transfer of market risk to the person asking for their money.</p>
+
+<p>This structure appears in lending markets, yield vaults, liquid staking systems, private-credit tokens, and protocols that divide assets into liquid and illiquid pools. A user is not always withdrawing a fixed pile of coins. They are often burning shares and asking the system to convert a proportional claim into an amount of a settlement asset, usually a stablecoin.</p>
+
+<h2>What happens when a user submits a withdrawal request?</h2>
+
+<p>The protocol records the request, calculates the user’s claim, and checks the assets that can be delivered without breaking its liquidity rules. That first calculation usually starts with net asset value: the user’s shares multiplied by the latest approved share price, minus fees, penalties, or accrued losses.</p>
+
+<p>The request then enters one of three paths:</p>
+
+<ul>
+<li><strong>Immediate settlement:</strong> idle cash or highly liquid tokens cover the redemption.</li>
+<li><strong>Market settlement:</strong> the manager sells assets through an exchange, an auction, or an automated market maker.</li>
+<li><strong>Queued settlement:</strong> the request waits for repayments, deposits, unlocks, or asset sales to create liquidity.</li>
+</ul>
+
+<p>A request can look fully funded on paper while remaining impossible to pay today. A vault holding $100 million in assets may have only $8 million in cash. If users request $15 million, the remaining $7 million must come from sales or later inflows. The balance sheet says the claim exists; the liquidity schedule says when it can be honored.</p>
+
+<h2>How is the withdrawal price determined?</h2>
+
+<p>The withdrawal price is determined by the protocol’s valuation rules at the settlement point, not necessarily when the request was submitted. This distinction decides who absorbs price movement during a queue.</p>
+
+<p>Some systems lock the user’s price when the request is accepted. Others keep the request floating until assets are sold. A third design issues a claim ticket whose final value depends on realized proceeds. Each method allocates risk differently:</p>
+
+<ul>
+<li>A locked price protects the requester but can dilute remaining holders if assets fall.</li>
+<li>A floating price protects the pool but exposes the requester to market losses during the delay.</li>
+<li>A realized-proceeds model makes the exiting holder share directly in execution slippage.</li>
+</ul>
+
+<p>Fees can also change the result. A withdrawal fee may fund remaining liquidity providers, compensate a market maker, or discourage runs. The fee is not cosmetic: it determines whether the first users out capture more liquidity while later users inherit a thinner pool.</p>
+
+<h2>Who bears the loss when liquidity runs out?</h2>
+
+<p>The party with the weakest protection absorbs the loss, and that is usually the withdrawing user or the holders who remain after them. If assets must be sold below their accounting value, the protocol may apply a haircut. If withdrawals are capped, the queue preserves the stated price while extending the time required to receive it.</p>
+
+<p>Governance controls this outcome through withdrawal limits, reserve targets, oracle selection, fee changes, and emergency pauses. Those powers matter more than the withdrawal button. A useful comparison is ParaSwap’s stablecoin bridge design, where execution and available route liquidity shape the amount that can actually move.</p>
+
+<blockquote><p>A withdrawal promise is only as strong as the assets that can be sold when everyone asks at once.</p></blockquote>
+
+<p>The verdict is straightforward: liquidity-based withdrawal systems do not eliminate redemption risk; they schedule, price, and assign it. Users should inspect the reserve ratio, queue rules, valuation timestamp, withdrawal cap, and loss waterfall before treating a liquid-looking token as cash.</p>
+    </div>
+  </div>
+</article>
+
+<section class="related" aria-labelledby="related-heading">
+  <header class="section-heading">
+    <div>
+      <p class="section-heading__index">Next / Read</p>
+      <h2 id="related-heading">Keep the signal</h2>
+    </div>
+  </header>
+
+  <div class="related__list">
+    <a href="/cross-chain-swaps-trade-assets-transfers-move-them/">
+      <span>Cross-Chain Swaps Trade Assets; Transfers Move Them</span>
+      <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand"><span class="brand-mark small" aria-hidden="true">BS</span> Block Signal</div>
+    <nav class="foot-nav" aria-label="Sections">
+<a href="/">Home</a>
+<a href="/about/">About us</a>
+<a href="/privacy/">Privacy policy</a>
+<a href="/archive/">All posts</a>
+    </nav>
+    <p class="foot-note">Block Signal is an independent publication not affiliated with or endorsed by any protocol, exchange, or project it covers, and nothing published here is financial advice.</p>
+    <p class="foot-meta">© 2026 Block Signal</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Contract Upgrades Change Protocol Behavior</title>
+<meta name="description" content="Contract upgrades can alter accounting, access and fund routing in place, making exposed value versus exit liquidity the trader’s decisive risk ratio.">
+<link rel="canonical" href="https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#090d0c">
+<meta name="author" content="Crypto Flow Monitor Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Flow Monitor">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Contract Upgrades Rewrite Protocol Risk in Place">
+<meta property="og:description" content="Contract upgrades can alter accounting, access and fund routing in place, making exposed value versus exit liquidity the trader’s decisive risk ratio.">
+<meta property="og:url" content="https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/contract-upgrades-rewrite-protocol-risk-in-place-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contract Upgrades Rewrite Protocol Risk in Place"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contract Upgrades Rewrite Protocol Risk in Place">
+<meta name="twitter:description" content="Contract upgrades can alter accounting, access and fund routing in place, making exposed value versus exit liquidity the trader’s decisive risk ratio.">
+<meta property="article:published_time" content="2026-09-09T18:27:45+00:00">
+<meta property="article:section" content="On-chain leverage and liquidations"><meta property="article:tag" content="On-chain leverage and liquidations">
+<meta property="article:tag" content="Cross-chain capital flows">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/sfc33d25166.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Flow Monitor" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/#webpage",
+      "url": "https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/",
+      "name": "How Contract Upgrades Change Protocol Behavior",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/#article",
+      "headline": "Contract Upgrades Rewrite Protocol Risk in Place",
+      "isAccessibleForFree": true,
+      "description": "Contract upgrades can alter accounting, access and fund routing in place, making exposed value versus exit liquidity the trader’s decisive risk ratio.",
+      "datePublished": "2026-09-09T18:27:45+00:00",
+      "dateModified": "2026-09-09T18:27:45+00:00",
+      "url": "https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptoposts.github.io/#org",
+        "name": "Crypto Flow Monitor Newsroom"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "keywords": "On-chain leverage and liquidations, Cross-chain capital flows",
+      "articleSection": "On-chain leverage and liquidations",
+      "wordCount": 595,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/contract-upgrades-rewrite-protocol-risk-in-place.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contract Upgrades Rewrite Protocol Risk in Place",
+          "item": "https://cryptoposts.github.io/contract-upgrades-rewrite-protocol-risk-in-place/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Flow Monitor",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Flow Monitor",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news for active traders, tracking exchange flows, stablecoin supply and on-chain liquidity to show where buying power builds and selling pressure grows."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sbfdaddc" href="#main">Skip to content</a>
+<header class="s5ec6aa9">
+  <div class="sfb65f2e s5fa5ef9">
+    <a class="s6a1a011" href="/" aria-label="Crypto Flow Monitor home">
+      <span class="s06c9601">CM</span>
+      <span class="s3fd58bf">Crypto Flow Monitor</span>
+    </a>
+    <p class="scb728a1">Crypto news, on-chain data &amp; market flows</p>
+    <div class="sdb57d09"><p>Crypto Flow Monitor covers exchange flows, stablecoin deployment and DEX liquidity for active crypto traders. We lead with measurable changes, trace where the money goes and test whether a headline signals fresh buying power, potential supply or funds moving between the same owner's wallets.</p></div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sfb65f2e s822eabc">
+  <header class="s25f9905">
+    <div class="s4a7a3e3">
+      <span>On-chain leverage and liquidations</span>
+      <span>Flow report</span>
+    </div>
+    <h1>Contract Upgrades Rewrite Protocol Risk in Place</h1>
+    <p class="s0cd87a6">Contract upgrades can alter accounting, access and fund routing in place, making exposed value versus exit liquidity the trader’s decisive risk ratio.</p>
+    <p class="s86d68e6">
+      <span>Crypto Flow Monitor Newsroom</span>
+      <time datetime="2026-09-09T18:27:45+00:00">Sep 9, 2026</time>
+      <span>3 min read</span>
+    </p>
+  </header>
+
+    <img class="sc85e189" src="/assets/covers/contract-upgrades-rewrite-protocol-risk-in-place.jpg" alt="Contract Upgrades Rewrite Protocol Risk in Place">
+
+  <div class="sd6b6d34">
+    <div class="s1d112b6"><p>A contract upgrade can rewrite a protocol’s economic rules while its address and balances stay put: on March 13, 2023, code added to Euler V1 helped an attacker extract about $197 million within hours, roughly 83% of the $237.9 million TVL DefiLlama reported before the attack. BlockSec traced the failure to a missing liquidity check in <strong>donateToReserves</strong>, a function introduced through an earlier governance proposal. The ratio makes the verdict plain: this was not a marginal bug but a near-pool-scale change in behavior.</p>
+
+<p>The funds did not begin as a directional trade. Flash-loaned DAI entered Euler, repeated borrow-and-deposit operations expanded internal eToken collateral and dToken debt, and the donation function reduced the collateral side without a solvency check. A liquidation then converted that broken accounting state into claimable assets; the flash loan was repaid and the remainder left Euler for attacker-controlled wallets. No bridge movement or exchange deposit was required in that sequence. Internal balance growth was leverage, not fresh capital, and the outgoing transfer proved extraction, not a sale.</p>
+
+<h2>How does a smart contract upgrade work?</h2>
+<p>Most upgrades change the logic that a persistent proxy address executes while leaving its storage and user-facing address intact. In a transparent or UUPS proxy, an authorized account points the proxy to a new implementation; calls then use the new code against the old balances, permissions and accounting records. Other protocols migrate users to a new deployment, but that creates a visible address break and usually requires approvals or asset transfers.</p>
+
+<p>Continuity is the advantage and the hazard. Integrations keep calling the same address, yet a modified calculation, oracle check or withdrawal path can make yesterday’s assumptions false. A timelock gives observers time to inspect bytecode and simulations; a multisig changes who can authorize the switch, not what the replacement code can do.</p>
+
+<h2>What can a contract upgrade change?</h2>
+<p>An upgrade can change every rule reachable through the proxy, subject to storage compatibility and permissions. The highest-impact checks are:</p>
+<ul>
+<li><strong>Accounting:</strong> how shares, debt, fees and collateral are created or destroyed.</li>
+<li><strong>Execution:</strong> swap curves, liquidation bonuses, withdrawal delays and slippage handling.</li>
+<li><strong>Authority:</strong> who may pause, mint, seize, whitelist or upgrade again.</li>
+<li><strong>Routing:</strong> which bridge, oracle, vault or settlement contract receives the next call.</li>
+</ul>
+<p>Routing deserves special care across chains. A holder assessing <a href="https://medium.com/@elliottgideon249/manta-bridge-deposits-worth-it-for-ethereum-holders-5a85303235ce" rel="noopener">Manta bridge-deposit economics</a> should separate ETH locked in origin-chain escrow from representation minted on the destination chain, then separate both from assets deposited into a DEX or lending pool. A proxy update may redirect messages or alter finalization without moving the escrow balance at activation. Idle issuance is therefore not deployed liquidity, and a bridge transfer is not evidence of a purchase.</p>
+
+<h2>How should traders measure contract upgrade risk?</h2>
+<p>Traders should compare value governed by changed code with executable exit liquidity, not merely count audits or governance votes. If an upgraded contract controls $100 million while liquid markets can absorb only $5 million within 1% slippage, the relevant exposure-to-depth ratio is 20:1; a small confidence shock can overwhelm the exit. By contrast, an upgrade covering a minor module with deep external liquidity may be operationally important but not market-moving.</p>
+
+<p>For the first 72 hours after activation, reduce position size, verify the implementation address, and watch net deposits, withdrawals, failed calls, liquidation volume and pool depth against their trailing 30-day ranges. My view is that an upgrade is bearish for exposed liquidity until those measures settle, because unchanged addresses conceal changed execution. That interpretation is invalidated if 72-hour net flows and 1% market depth remain inside their prior 30-day ranges with no abnormal liquidation or revert spike.</p></div>
+    <aside class="sb365ea5">
+      <div class="s4a7a3e3"><span>Read the flow</span></div>
+      <p>Track liquidity, exchange balances and stablecoin supply before treating a headline as directional.</p>
+    </aside>
+  </div>
+
+    <section class="s65fd345">
+      <div class="s4a7a3e3"><span>Filed under</span></div>
+      <div class="s380ff57">
+<span>On-chain leverage and liquidations</span><span>Cross-chain capital flows</span>      </div>
+    </section>
+
+    <section class="sb5ff447">
+      <div class="s4a7a3e3"><span>Continue tracking</span></div>
+      <div class="s2e47c5d">
+          <a href="/syncswap-aqua-pools-need-volume-not-just-volatility/">SyncSwap Aqua Pools Need Volume, Not Just Volatility</a>
+          <a href="/transaction-graphs-beat-wallet-labels-on-market-signals/">Transaction Graphs Beat Wallet Labels on Market Signals</a>
+          <a href="/jupiter-deposits-launch-as-solana-stablecoins-add-796m/">Jupiter Deposits Launch as Solana Stablecoins Add $796M</a>
+          <a href="/liquid-gets-3-400-btc-back-598-5-btc-still-missing/">Liquid Gets 3,400 BTC Back, 598.5 BTC Still Missing</a>
+      </div>
+    </section>
+</article>
+</main>
+
+<footer class="s253b97c">
+  <div class="sfb65f2e s16d8b24">
+    <div>
+      <div class="s7015ea5"><span>CM</span> Crypto Flow Monitor</div>
+      <p>Crypto Flow Monitor is an independent publication, is not affiliated with or endorsed by any protocol, exchange or project it covers, and provides no financial advice.</p>
+    </div>
+    <nav class="sb5505a5" aria-label="Site navigation">
+      <span class="s39f171b">Publication</span>
+<a href="/">Home</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a><a href="/archive/">All posts</a>    </nav>
+      <nav class="sb5505a5" aria-label="Topic hubs">
+        <span class="s39f171b">Topic hubs</span>
+<a href="/topics/cross-chain-capital-flows/">Cross-chain capital flows</a><a href="/topics/dex-liquidity-and-execution-costs/">DEX liquidity and execution costs</a><a href="/topics/large-holder-transfers-and-token-unlocks/">Large-holder transfers and token unlocks</a><a href="/topics/exchange-deposits-and-withdrawals/">Exchange deposits and withdrawals</a><a href="/topics/stablecoin-issuance-and-deployment/">Stablecoin issuance and deployment</a><a href="/topics/on-chain-leverage-and-liquidations/">On-chain leverage and liquidations</a>      </nav>
+  </div>
+  <div class="sfb65f2e s1875573">© 2026 Crypto Flow Monitor</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Payment Channels Settle Transfers Off-Chain</title>
+<meta name="description" content="Payment channels keep transfers off-chain by replacing broadcasts with signed balance updates, saving block space while preserving an on-chain exit.">
+<link rel="canonical" href="https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#090d0c">
+<meta name="author" content="Crypto Flow Monitor Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Flow Monitor">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Payment Channels Move Transfers Off-Chain">
+<meta property="og:description" content="Payment channels keep transfers off-chain by replacing broadcasts with signed balance updates, saving block space while preserving an on-chain exit.">
+<meta property="og:url" content="https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/why-payment-channels-move-transfers-off-chain-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Payment Channels Move Transfers Off-Chain"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Payment Channels Move Transfers Off-Chain">
+<meta name="twitter:description" content="Payment channels keep transfers off-chain by replacing broadcasts with signed balance updates, saving block space while preserving an on-chain exit.">
+<meta property="article:published_time" content="2026-09-09T22:15:37+00:00">
+<meta property="article:section" content="Exchange deposits and withdrawals"><meta property="article:tag" content="Exchange deposits and withdrawals">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/sfc33d25166.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Flow Monitor" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/#webpage",
+      "url": "https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/",
+      "name": "Why Payment Channels Settle Transfers Off-Chain",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/#article",
+      "headline": "Why Payment Channels Move Transfers Off-Chain",
+      "isAccessibleForFree": true,
+      "description": "Payment channels keep transfers off-chain by replacing broadcasts with signed balance updates, saving block space while preserving an on-chain exit.",
+      "datePublished": "2026-09-09T22:15:37+00:00",
+      "dateModified": "2026-09-09T22:15:37+00:00",
+      "url": "https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptoposts.github.io/#org",
+        "name": "Crypto Flow Monitor Newsroom"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "keywords": "Exchange deposits and withdrawals",
+      "articleSection": "Exchange deposits and withdrawals",
+      "wordCount": 475,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/why-payment-channels-move-transfers-off-chain.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Payment Channels Move Transfers Off-Chain",
+          "item": "https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Flow Monitor",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Flow Monitor",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news for active traders, tracking exchange flows, stablecoin supply and on-chain liquidity to show where buying power builds and selling pressure grows."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sbfdaddc" href="#main">Skip to content</a>
+<header class="s5ec6aa9">
+  <div class="sfb65f2e s5fa5ef9">
+    <a class="s6a1a011" href="/" aria-label="Crypto Flow Monitor home">
+      <span class="s06c9601">CM</span>
+      <span class="s3fd58bf">Crypto Flow Monitor</span>
+    </a>
+    <p class="scb728a1">Crypto news, on-chain data &amp; market flows</p>
+    <div class="sdb57d09"><p>Crypto Flow Monitor covers exchange flows, stablecoin deployment and DEX liquidity for active crypto traders. We lead with measurable changes, trace where the money goes and test whether a headline signals fresh buying power, potential supply or funds moving between the same owner's wallets.</p></div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sfb65f2e s822eabc">
+  <header class="s25f9905">
+    <div class="s4a7a3e3">
+      <span>Exchange deposits and withdrawals</span>
+      <span>Flow report</span>
+    </div>
+    <h1>Why Payment Channels Move Transfers Off-Chain</h1>
+    <p class="s0cd87a6">Payment channels keep transfers off-chain by replacing broadcasts with signed balance updates, saving block space while preserving an on-chain exit.</p>
+    <p class="s86d68e6">
+      <span>Crypto Flow Monitor Newsroom</span>
+      <time datetime="2026-09-09T22:15:37+00:00">Sep 9, 2026</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+
+    <img class="sc85e189" src="/assets/covers/why-payment-channels-move-transfers-off-chain.jpg" alt="Why Payment Channels Move Transfers Off-Chain">
+
+  <div class="sd6b6d34">
+    <div class="s1d112b6"><p>Payment channels settle transfers off-chain because participants exchange enforceable, signed updates to one locked on-chain balance instead of broadcasting every payment. On September 9, Mempool.space’s public Lightning graph showed 4,898.27 BTC in channels, up 27.47 BTC from its 4,870.8 BTC reading on May 30. That net addition equals roughly 230 channels at the current 0.119 BTC average, yet only 0.56% of the visible liquidity pool. The change is infrastructure growth, not a meaningful spot-market signal: it neither identifies a purchase nor shows capital reaching an exchange.</p>
+
+<h2>How does a payment channel move value without a blockchain transaction?</h2>
+
+<p>A channel moves value by repeatedly changing how its already-locked funds would be divided if the channel closed. Two peers first control a funding output together. Each then retains a valid commitment transaction reflecting the latest balance, while superseded states are revoked or made costly to publish.</p>
+
+<ul>
+<li><strong>Open:</strong> a funding transaction locks bitcoin under the channel’s spending conditions.</li>
+<li><strong>Update:</strong> peers sign a new allocation without sending anything to miners.</li>
+<li><strong>Route:</strong> hash-and-time-locked payments connect several channels atomically.</li>
+<li><strong>Close:</strong> the final allocation is published cooperatively or enforced unilaterally.</li>
+</ul>
+
+<p>No coin is created during an update, and no bridge movement occurs. The same funded output backs a changing set of claims between peers. That makes a channel balance different from <a href="https://ethereumnews.github.io/a-universal-bridge-uasset-is-a-custodial-claim-not-a-coin/" rel="noopener">a custodial bridge claim</a>, where a separate operator may issue a representation of an asset held elsewhere.</p>
+
+<h2>When does a payment channel settle on-chain?</h2>
+
+<p>A payment channel touches the blockchain when it opens, closes or requires dispute enforcement. A cooperative close spends the funding output into the balances both peers accept. A force close broadcasts the latest commitment transaction and may impose time delays, giving the counterparty an opportunity to punish publication of a revoked state.</p>
+
+<p>The blockchain therefore records the channel’s entry and exit, not its payment history. Thousands of updates can collapse into two on-chain transactions. The trade-off is liquidity: funds committed to one side of a channel cannot automatically serve every destination, and routing can fail even when aggregate network capacity looks ample.</p>
+
+<h2>Does rising channel capacity signal demand for bitcoin?</h2>
+
+<p>Rising capacity primarily signals that operators have locked more bitcoin into payment infrastructure. It may support more transfers, but it does not reveal whether that liquidity is active, balanced or idle. Rebalancing between channels is an internal transfer; opening a channel to an exchange node is not an exchange deposit; only a completed payment that the venue credits to a customer account represents capital reaching that venue.</p>
+
+<p>For traders over the next 30 days, the current 0.56% capacity increase offers no directional case for bitcoin. The interpretation would change if Mempool.space’s next rolling 30-day reading showed public capacity rising more than 5% while channel count also expanded. Until then, payment channels matter as block-space compression and settlement infrastructure, not as evidence of imminent buying or selling.</p></div>
+    <aside class="sb365ea5">
+      <div class="s4a7a3e3"><span>Read the flow</span></div>
+      <p>Track liquidity, exchange balances and stablecoin supply before treating a headline as directional.</p>
+    </aside>
+  </div>
+
+    <section class="s65fd345">
+      <div class="s4a7a3e3"><span>Filed under</span></div>
+      <div class="s380ff57">
+<span>Exchange deposits and withdrawals</span>      </div>
+    </section>
+
+    <section class="sb5ff447">
+      <div class="s4a7a3e3"><span>Continue tracking</span></div>
+      <div class="s2e47c5d">
+          <a href="/how-coin-selection-changes-the-fee-your-wallet-shows/">How Coin Selection Changes the Fee Your Wallet Shows</a>
+          <a href="/how-liquidity-based-withdrawals-actually-settle/">How Liquidity-Based Withdrawals Actually Settle</a>
+          <a href="/fraud-proofs-find-the-first-wrong-state-transition/">Fraud Proofs Find the First Wrong State Transition</a>
+          <a href="/selective-disclosure-needs-salts-and-key-binding/">Selective Disclosure Needs Salts and Key Binding</a>
+      </div>
+    </section>
+</article>
+</main>
+
+<footer class="s253b97c">
+  <div class="sfb65f2e s16d8b24">
+    <div>
+      <div class="s7015ea5"><span>CM</span> Crypto Flow Monitor</div>
+      <p>Crypto Flow Monitor is an independent publication, is not affiliated with or endorsed by any protocol, exchange or project it covers, and provides no financial advice.</p>
+    </div>
+    <nav class="sb5505a5" aria-label="Site navigation">
+      <span class="s39f171b">Publication</span>
+<a href="/">Home</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a><a href="/archive/">All posts</a>    </nav>
+      <nav class="sb5505a5" aria-label="Topic hubs">
+        <span class="s39f171b">Topic hubs</span>
+<a href="/topics/cross-chain-capital-flows/">Cross-chain capital flows</a><a href="/topics/dex-liquidity-and-execution-costs/">DEX liquidity and execution costs</a><a href="/topics/large-holder-transfers-and-token-unlocks/">Large-holder transfers and token unlocks</a><a href="/topics/stablecoin-issuance-and-deployment/">Stablecoin issuance and deployment</a><a href="/topics/exchange-deposits-and-withdrawals/">Exchange deposits and withdrawals</a><a href="/topics/on-chain-leverage-and-liquidations/">On-chain leverage and liquidations</a>      </nav>
+  </div>
+  <div class="sfb65f2e s1875573">© 2026 Crypto Flow Monitor</div>
+</footer>
+</body>
+</html>

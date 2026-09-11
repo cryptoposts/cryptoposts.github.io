@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cryptoposts.github.io/</loc><lastmod>2026-09-11</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptoposts.github.io/transaction-nonces-stop-replays-not-market-risk/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/why-payment-channels-move-transfers-off-chain/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/fraud-proofs-find-the-first-wrong-state-transition/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/selective-disclosure-needs-salts-and-key-binding/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -21,9 +22,9 @@
 <url><loc>https://cryptoposts.github.io/cross-chain-swaps-trade-assets-transfers-move-them/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/topics/cross-chain-capital-flows/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptoposts.github.io/topics/dex-liquidity-and-execution-costs/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+<url><loc>https://cryptoposts.github.io/topics/exchange-deposits-and-withdrawals/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptoposts.github.io/topics/large-holder-transfers-and-token-unlocks/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptoposts.github.io/topics/stablecoin-issuance-and-deployment/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-<url><loc>https://cryptoposts.github.io/topics/exchange-deposits-and-withdrawals/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptoposts.github.io/topics/on-chain-leverage-and-liquidations/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptoposts.github.io/archive/</loc><priority>0.3</priority></url>
 <url><loc>https://cryptoposts.github.io/about/</loc><priority>0.3</priority></url>

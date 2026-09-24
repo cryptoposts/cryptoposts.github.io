@@ -1,10 +1,8 @@
-# Crypto Flow Monitor
+# Block Today
 
-> Independent crypto news and on-chain analysis for active traders.
-
-Coverage: exchange flows, stablecoins, DEX liquidity, token supply and on-chain leverage.
-Editorial approach: lead with measurable changes and distinguish observed flows from inferred intent.
+> Block Today files independent crypto news on exchanges, protocols, stablecoins, regulation and security incidents: facts first, sources named.
 
 ## Key pages
-- [Homepage](https://cryptoposts.github.io/): Latest coverage and analysis.
-- [About](https://cryptoposts.github.io/about/): Newsroom identity, sourcing and corrections policy.
+- [Homepage](https://cryptoposts.github.io/): latest reporting and analysis.
+- [About](https://cryptoposts.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://cryptoposts.github.io/archive/): everything published.

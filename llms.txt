@@ -1,6 +1,6 @@
-# Crypto Newsline
+# Crypto Bulletin
 
-> Crypto Newsline reports crypto news: Bitcoin and Ethereum markets, exchange and protocol updates, token launches, regulation, security incidents and funding.
+> Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure.
 
 ## Key pages
 - [Homepage](https://cryptoposts.github.io/): latest reporting and analysis.

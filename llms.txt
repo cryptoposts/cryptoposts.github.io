@@ -1,6 +1,6 @@
-# Block Today
+# Crypto Newsline
 
-> Block Today files independent crypto news on exchanges, protocols, stablecoins, regulation and security incidents: facts first, sources named.
+> Crypto Newsline reports crypto news: Bitcoin and Ethereum markets, exchange and protocol updates, token launches, regulation, security incidents and funding.
 
 ## Key pages
 - [Homepage](https://cryptoposts.github.io/): latest reporting and analysis.

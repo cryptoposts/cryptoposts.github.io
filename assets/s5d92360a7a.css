@@ -1,7 +1,7 @@
 :root{
   --bg:#efe7d8; --surface:#f8f3ea; --elevated:#fbf8f2;
   --text:#14120f; --muted:#5e554a; --border:#cfc3ae;
-  --accent:#bf4a14; --accent-ink:#ffffff;
+  --accent:#bf4a14; --accent-ink:#ffffff; --accent-text:#ad4312;
   --font-display:"Archivo Narrow", system-ui, sans-serif;
   --font-body:"Archivo", system-ui, sans-serif;
   --font-mono:"Martian Mono", ui-monospace, Menlo, monospace;
@@ -35,7 +35,7 @@ p{margin:0 0 1.1em}
 .s94a50d1 > *{max-width:68ch}
 .s94a50d1 h2{font-size:1.55rem; margin-top:1.9em}
 .s94a50d1 h3{font-size:1.22rem; margin-top:1.5em}
-.s94a50d1 a{color:var(--accent); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
+.s94a50d1 a{color:var(--accent-text, var(--accent)); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
 .s94a50d1 a:hover{text-decoration-thickness:2px}
 .s94a50d1 ul,.s94a50d1 ol{padding-left:1.3em; margin:0 0 1.2em}
 .s94a50d1 li{margin:.35em 0}

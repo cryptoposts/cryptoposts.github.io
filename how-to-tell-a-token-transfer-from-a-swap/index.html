@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Transfers and Swaps: How to Spot the Difference</title>
+<meta name="description" content="A token transfer records an asset moving between addresses; a swap exchanges assets through a contract, and the transaction receipt shows which occurred.">
+<link rel="canonical" href="https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Tell a Token Transfer From a Swap">
+<meta property="og:description" content="A token transfer records an asset moving between addresses; a swap exchanges assets through a contract, and the transaction receipt shows which occurred.">
+<meta property="og:url" content="https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/how-to-tell-a-token-transfer-from-a-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Tell a Token Transfer From a Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Tell a Token Transfer From a Swap">
+<meta name="twitter:description" content="A token transfer records an asset moving between addresses; a swap exchanges assets through a contract, and the transaction receipt shows which occurred.">
+<meta property="article:published_time" content="2026-09-27T19:40:00+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/#webpage",
+      "url": "https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/",
+      "name": "Token Transfers and Swaps: How to Spot the Difference",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/#article",
+      "headline": "How to Tell a Token Transfer From a Swap",
+      "isAccessibleForFree": true,
+      "description": "A token transfer records an asset moving between addresses; a swap exchanges assets through a contract, and the transaction receipt shows which occurred.",
+      "datePublished": "2026-09-27T19:40:00+00:00",
+      "dateModified": "2026-09-27T19:40:00+00:00",
+      "url": "https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 513,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/how-to-tell-a-token-transfer-from-a-swap.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Tell a Token Transfer From a Swap",
+          "item": "https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-27T19:40:00+00:00">2026-09-27 19:40 UTC</time>
+      <span>ID 73ef43</span>
+    </div>
+    <h1 class="scc79eb1">How to Tell a Token Transfer From a Swap</h1>
+<p class="s60efbe6">A token transfer records an asset moving between addresses; a swap exchanges assets through a contract, and the transaction receipt shows which occurred.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-27T19:40:00+00:00">Sep 27, 2026</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/how-to-tell-a-token-transfer-from-a-swap.jpg" alt="Cover image for How to Tell a Token Transfer From a Swap" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>A token transfer moves a specified amount of an asset between blockchain addresses; a swap exchanges one asset for another through a contract. To tell them apart, check the transaction’s token events and amounts, not just the address shown as its destination.</p>
+
+<h2>What happens in a token transfer?</h2>
+<p>A transfer changes who holds a token. On Ethereum, common ERC-20 tokens record transfers in transaction logs with a sender, recipient and amount; the transaction receipt makes those records available for inspection.</p>
+<p>A wallet may show the transfer as a simple send, but the blockchain records the contract call and its events. The top-level “To” address can be a token contract, so it may not be the person who received the tokens.</p>
+<p>For a quicker way to choose a token chart, see this guide to <a href="https://ethereumnews.github.io/poocoin-chart-workflow-find-the-right-pair-before-reading-price/" rel="noopener">PooCoin’s faster chart workflow</a>. A chart can show price movement, but the transaction receipt is where to check what moved between addresses.</p>
+
+<h2>How can you spot a swap?</h2>
+<p>A swap exchanges one asset for another in a single transaction, usually through a decentralised exchange contract or router. The receipt often contains several token transfers: an input sent to a contract, an output sent to the trader, and sometimes additional movements for fees or routing.</p>
+<p>Look for evidence of both sides of the exchange in the transaction’s logs. A token transfer into a router followed by a different token arriving at the user’s address points to a swap; a transfer with one token sent to another holder and no exchanged asset points to a straightforward send.</p>
+<ul>
+<li>Check the transaction’s token transfer events, including each sender, recipient and amount.</li>
+<li>Compare the assets leaving and arriving at the wallet.</li>
+<li>Check whether a swap or exchange event appears in the receipt, if the explorer decodes one.</li>
+<li>Account for fees, routed trades and wrapped assets, which can add extra transfers.</li>
+</ul>
+
+<h2>Why can one swap look like many transfers?</h2>
+<p>A swap can involve several contracts before the output reaches the trader. A router may split a trade across pools, and a fee may go to a separate address. Each leg can appear as its own token transfer even though the user initiated one exchange.</p>
+<p>Some trades also involve wrapped versions of native coins, such as a chain’s native asset represented as a token. That can create an extra wrapping or unwrapping step in the receipt. Follow the events and amounts across the whole transaction rather than treating every line as a separate trade.</p>
+
+<h2>Which details should you verify?</h2>
+<p>Start with the transaction hash and confirm the network, status and token contract. Then identify the wallet that initiated the transaction, the assets involved, and the net amounts it sent and received. A successful status means the transaction executed; it does not by itself establish that the trade matched the wallet’s expectations.</p>
+<p>The practical distinction is the outcome: a transfer changes the holder of an asset, while a swap changes the assets held. When a receipt contains several movements, trace them together to see whether the wallet simply sent tokens or received a different asset in exchange.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/solana-activates-alpenglow-finality-upgrade-on-public-testnet/">Solana activates Alpenglow finality upgrade on public testnet</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

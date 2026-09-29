@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mantle Bridge Withdrawals: Plan Treasury Timing and Gas</title>
+<meta name="description" content="Mantle withdrawals require an L2 transaction, a wait for Ethereum settlement and a separate L1 claim, so treasuries should budget time and gas at both ends.">
+<link rel="canonical" href="https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Mantle Treasury Withdrawals Need an Ethereum Claim Plan">
+<meta property="og:description" content="Mantle withdrawals require an L2 transaction, a wait for Ethereum settlement and a separate L1 claim, so treasuries should budget time and gas at both ends.">
+<meta property="og:url" content="https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/mantle-treasury-withdrawals-need-an-ethereum-claim-plan-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mantle Treasury Withdrawals Need an Ethereum Claim Plan"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mantle Treasury Withdrawals Need an Ethereum Claim Plan">
+<meta name="twitter:description" content="Mantle withdrawals require an L2 transaction, a wait for Ethereum settlement and a separate L1 claim, so treasuries should budget time and gas at both ends.">
+<meta property="article:published_time" content="2026-09-29T20:14:48+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/#webpage",
+      "url": "https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/",
+      "name": "Mantle Bridge Withdrawals: Plan Treasury Timing and Gas",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/#article",
+      "headline": "Mantle Treasury Withdrawals Need an Ethereum Claim Plan",
+      "isAccessibleForFree": true,
+      "description": "Mantle withdrawals require an L2 transaction, a wait for Ethereum settlement and a separate L1 claim, so treasuries should budget time and gas at both ends.",
+      "datePublished": "2026-09-29T20:14:48+00:00",
+      "dateModified": "2026-09-29T20:14:48+00:00",
+      "url": "https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 446,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/mantle-treasury-withdrawals-need-an-ethereum-claim-plan.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mantle Treasury Withdrawals Need an Ethereum Claim Plan",
+          "item": "https://cryptoposts.github.io/mantle-treasury-withdrawals-need-an-ethereum-claim-plan/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-29T20:14:48+00:00">2026-09-29 20:14 UTC</time>
+      <span>ID 0be187</span>
+    </div>
+    <h1 class="scc79eb1">Mantle Treasury Withdrawals Need an Ethereum Claim Plan</h1>
+<p class="s60efbe6">Mantle withdrawals require an L2 transaction, a wait for Ethereum settlement and a separate L1 claim, so treasuries should budget time and gas at both ends.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-29T20:14:48+00:00">Sep 29, 2026</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/mantle-treasury-withdrawals-need-an-ethereum-claim-plan.jpg" alt="Cover image for Mantle Treasury Withdrawals Need an Ethereum Claim Plan" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>Mantle treasury teams should allow up to 12 hours for a withdrawal to Ethereum and budget for two gas payments: MNT on Mantle and ETH on Ethereum. Mantle’s bridge FAQ says withdrawals pass through a challenge period before the Ethereum claim can be made.</p>
+
+<h2>How does a Mantle withdrawal reach Ethereum?</h2>
+<p>A withdrawal starts with a transaction on Mantle, where the treasury wallet pays gas in MNT. After the bridge marks the request ready, the wallet must switch to Ethereum and submit a separate claim, which costs ETH, according to Mantle’s bridge FAQ.</p>
+<p>The first transaction starts the process; it does not put the funds in the Ethereum wallet. For the interface steps and return sequence, see <a href="https://telegra.ph/How-to-Withdraw-With-Mantle-Bridge-and-Return-to-Ethereum-09-29" rel="noopener">Mantle Bridge</a>. Keep the withdrawal transaction details so the team can find and track that request while it is pending.</p>
+
+<h2>How much time and gas should a treasury plan for?</h2>
+<p>Mantle’s FAQ says Ethereum withdrawals can take up to 12 hours because of the challenge period. Treat that as a planning window, not a guaranteed completion time: the claim becomes actionable only after the bridge’s status advances.</p>
+<p>Budget gas on both networks before initiating the transfer. The FAQ specifies MNT for the Mantle transaction and ETH for the Ethereum claim; holding enough value in the asset being withdrawn does not cover either network’s gas requirement.</p>
+<ul>
+<li>Set the amount and destination wallet, then check the selected token and route.</li>
+<li>Keep MNT available in the Mantle wallet for the withdrawal transaction.</li>
+<li>Keep ETH available in the Ethereum wallet for the later claim.</li>
+<li>Allow time for the status to update, and assign someone to complete the claim when it is ready.</li>
+</ul>
+<p>For a treasury, this creates two distinct cash-planning points: the Mantle transaction starts the exit, while the Ethereum claim makes the funds available on L1. A transfer needed for a scheduled payment should begin early enough to leave room for both steps.</p>
+
+<h2>How should teams coordinate multiple withdrawals?</h2>
+<p>Group withdrawals around when Ethereum liquidity is needed, rather than treating each Mantle transaction as an immediate balance change on L1. Record the requested amount, wallet, transaction reference and claim status so the team can reconcile pending funds separately from spendable Ethereum funds.</p>
+<p>If several requests are required, track each one through its own claim; completing one does not complete the others. Treasury signers should also confirm that the wallet used for the eventual claim has ETH, since the claim is a separate Ethereum transaction.</p>
+<p>The practical rule is to plan for a wait and a second signature. Mantle’s stated window and gas requirements give teams a basis for scheduling, while the bridge’s live status determines when each Ethereum claim can proceed.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/ethereum-gas-estimates-what-to-check-before-a-withdrawal/">Ethereum Gas Estimates: What to Check Before a Withdrawal</a></li>
+        <li><a href="/manta-bridge-routes-depend-on-asset-network-and-return-plan/">Manta bridge routes depend on asset, network and return plan</a></li>
+        <li><a href="/how-virtual-pools-let-treasuries-swap-without-wrapped-tokens/">How Virtual Pools Let Treasuries Swap Without Wrapped Tokens</a></li>
+        <li><a href="/swap-tracking-follows-a-trade-from-deposit-to-payout/">Swap tracking follows a trade from deposit to payout</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

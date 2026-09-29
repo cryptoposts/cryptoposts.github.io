@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solana Swap Pending: How to Check Its Status</title>
+<meta name="description" content="A pending Solana swap is a status gap, not proof of success or failure; check its signature, confirmation level and blockhash expiry before retrying.">
+<link rel="canonical" href="https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a Solana Swap Can Stay Pending">
+<meta property="og:description" content="A pending Solana swap is a status gap, not proof of success or failure; check its signature, confirmation level and blockhash expiry before retrying.">
+<meta property="og:url" content="https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/why-a-solana-swap-can-stay-pending-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Solana Swap Can Stay Pending"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Solana Swap Can Stay Pending">
+<meta name="twitter:description" content="A pending Solana swap is a status gap, not proof of success or failure; check its signature, confirmation level and blockhash expiry before retrying.">
+<meta property="article:published_time" content="2026-09-29T17:22:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/#webpage",
+      "url": "https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/",
+      "name": "Solana Swap Pending: How to Check Its Status",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/#article",
+      "headline": "Why a Solana Swap Can Stay Pending",
+      "isAccessibleForFree": true,
+      "description": "A pending Solana swap is a status gap, not proof of success or failure; check its signature, confirmation level and blockhash expiry before retrying.",
+      "datePublished": "2026-09-29T17:22:20+00:00",
+      "dateModified": "2026-09-29T17:22:20+00:00",
+      "url": "https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 520,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/why-a-solana-swap-can-stay-pending.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Solana Swap Can Stay Pending",
+          "item": "https://cryptoposts.github.io/why-a-solana-swap-can-stay-pending/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-29T17:22:20+00:00">2026-09-29 17:22 UTC</time>
+      <span>ID 4f59f6</span>
+    </div>
+    <h1 class="scc79eb1">Why a Solana Swap Can Stay Pending</h1>
+<p class="s60efbe6">A pending Solana swap is a status gap, not proof of success or failure; check its signature, confirmation level and blockhash expiry before retrying.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-29T17:22:20+00:00">Sep 29, 2026</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/why-a-solana-swap-can-stay-pending.jpg" alt="Cover image for Why a Solana Swap Can Stay Pending" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>A Solana swap can stay marked pending after submission because its wallet has not yet received a usable confirmation result; that label alone does not show whether the swap succeeded. Solana’s transaction guidance describes a flow in which a signed transaction is sent to an RPC node, forwarded for processing, and then checked for inclusion or expiry.</p>
+
+<h2>What does pending mean on Solana?</h2>
+<p>Pending means the app has not resolved the transaction’s status, which is separate from whether the network has processed it. Solana’s <code>getSignatureStatuses</code> RPC method reports a status and confirmation level for a transaction signature; a missing status can mean that the queried node has no record in its recent cache, not that the transaction definitely failed.</p>
+<p>Find the signature in the wallet’s activity details and check it through the wallet’s transaction view or another Solana status checker. Solana uses the levels <code>processed</code>, <code>confirmed</code> and <code>finalized</code>, in increasing order of commitment; its RPC guidance says to check both the confirmation level and whether the transaction’s <code>err</code> field is null. For the route and liquidity questions behind a Byreal swap, see <a href="https://app.notion.com/p/Byreal-for-Solana-Swaps-and-Liquidity-What-to-Check-3ea018e282378083bcf2d33b8d7e38d3" rel="noopener">Byreal swap and liquidity checks</a>.</p>
+
+<h2>Why can a Solana swap take longer?</h2>
+<p>A transaction may wait because it has not landed in a block, or because the app or RPC node is slow to report its status. Solana’s production guidance says mainnet transactions compete for block space and identifies a fresh blockhash, a suitable compute limit and a priority fee as factors that can help a transaction land.</p>
+<p>Every recent-blockhash transaction has a limited lifetime. Solana’s guidance puts that window at roughly 150 blocks, or about 60–90 seconds, and says the returned <code>lastValidBlockHeight</code> can be used to track expiry. A status check can also miss an older transaction if it has left the recent cache; Solana documents <code>searchTransactionHistory</code> for that case.</p>
+<p>For a swap, the transaction contains instructions that perform the trade as one atomic operation: Solana’s transaction documentation says the instructions succeed or fail together. A fee can therefore be charged for a failed transaction even when the intended token exchange did not complete, so check the transaction result before judging it by the wallet’s pending label.</p>
+
+<h2>What should you check before retrying?</h2>
+<p>Check the existing signature and its expiry before signing another swap. Solana’s transaction guidance ties expiry to the blockhash, while its status guidance uses the signature and execution error to distinguish a confirmed result from an unresolved one.</p>
+<ul>
+<li>Open the transaction details and copy its signature.</li>
+<li>Check whether the status is absent, processed, confirmed or finalized, and whether an error is reported.</li>
+<li>If the transaction is still unresolved, check whether its blockhash remains valid using the transaction’s recorded validity information, when available.</li>
+<li>After confirmation, inspect the token balances or transaction record to see whether the swap executed.</li>
+</ul>
+<p>Do not submit a second, newly signed swap while the first signature is unresolved: the first transaction could still land, leaving you with two trades. If the blockhash has expired and the transaction did not land, rebuild and review the swap before signing again; Solana’s guidance requires a fresh blockhash for a new transaction.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/bungee-bridge-estimate-source-chain-gas-before-you-send/">Bungee Bridge: Estimate Source-Chain Gas Before You Send</a></li>
+        <li><a href="/blackhole-emissions-need-a-fee-and-dilution-test/">Blackhole emissions need a fee and dilution test</a></li>
+        <li><a href="/four-checks-for-setting-slippage-on-your-first-swap/">Four Checks for Setting Slippage on Your First Swap</a></li>
+        <li><a href="/bridge-arrival-times-depend-on-finality-and-liquidity/">Bridge arrival times depend on finality and liquidity</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

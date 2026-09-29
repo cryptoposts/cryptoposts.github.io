@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethereum deposit confirmations and finality explained</title>
+<meta name="description" content="Ethereum deposits wait while exchanges verify chain inclusion and risk; blocks arrive about every 12 seconds, but protocol finality takes about 15 minutes.">
+<link rel="canonical" href="https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Ethereum deposits wait for confirmations">
+<meta property="og:description" content="Ethereum deposits wait while exchanges verify chain inclusion and risk; blocks arrive about every 12 seconds, but protocol finality takes about 15 minutes.">
+<meta property="og:url" content="https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/why-ethereum-deposits-wait-for-confirmations-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Ethereum deposits wait for confirmations"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Ethereum deposits wait for confirmations">
+<meta name="twitter:description" content="Ethereum deposits wait while exchanges verify chain inclusion and risk; blocks arrive about every 12 seconds, but protocol finality takes about 15 minutes.">
+<meta property="article:published_time" content="2026-09-29T23:45:35+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/#webpage",
+      "url": "https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/",
+      "name": "Ethereum deposit confirmations and finality explained",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/#article",
+      "headline": "Why Ethereum deposits wait for confirmations",
+      "isAccessibleForFree": true,
+      "description": "Ethereum deposits wait while exchanges verify chain inclusion and risk; blocks arrive about every 12 seconds, but protocol finality takes about 15 minutes.",
+      "datePublished": "2026-09-29T23:45:35+00:00",
+      "dateModified": "2026-09-29T23:45:35+00:00",
+      "url": "https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 532,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/why-ethereum-deposits-wait-for-confirmations.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Ethereum deposits wait for confirmations",
+          "item": "https://cryptoposts.github.io/why-ethereum-deposits-wait-for-confirmations/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-29T23:45:35+00:00">2026-09-29 23:45 UTC</time>
+      <span>ID 7f9ec9</span>
+    </div>
+    <h1 class="scc79eb1">Why Ethereum deposits wait for confirmations</h1>
+<p class="s60efbe6">Ethereum deposits wait while exchanges verify chain inclusion and risk; blocks arrive about every 12 seconds, but protocol finality takes about 15 minutes.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-29T23:45:35+00:00">Sep 29, 2026</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/why-ethereum-deposits-wait-for-confirmations.jpg" alt="Cover image for Why Ethereum deposits wait for confirmations" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>Ethereum blocks arrive about every 12 seconds, but exchanges can wait about 15 minutes or longer before crediting a deposit. The delay gives the receiving service time to check that the transfer is in the chain it accepts and, for a stronger guarantee, that Ethereum has finalized the block.</p>
+
+<p>A wallet may show a transaction as successful as soon as it is included in a block. That confirms execution on the current chain view; it does not mean every exchange has met its own crediting threshold. An exchange chooses that threshold according to its risk controls and may show a pending deposit while it waits.</p>
+
+<h2>What does a confirmation mean on Ethereum?</h2>
+
+<p>A confirmation means a transaction has been included in a block, with later blocks extending the chain after it. Ethereum.org describes blocks as batches of transactions linked by references to their parent blocks; new blocks are proposed roughly every 12 seconds.</p>
+
+<p>As more blocks follow the one containing a deposit, a short-lived chain reorganization becomes less likely to remove that transaction from the chain the network settles on. This is why services often count confirmations: the count is a practical signal of how much the chain has built on top of the deposit, not a separate approval issued by Ethereum.</p>
+
+<p>Confirmation counts are useful when comparing transfers across networks, but the same number does not mean the same security on every chain. For a separate guide to choosing a route for regular transfers, see how to <a href="https://aboutdefi.github.io/polygon-bridge-routes-what-regular-users-should-compare/" rel="noopener">compare Polygon Bridge routes for transfers</a>. A bridge may also wait for source-chain checks before releasing assets on its destination chain.</p>
+
+<h2>Why can an exchange wait after a transaction appears?</h2>
+
+<p>An exchange waits because it must decide when the chance of a deposit being reversed is low enough for it to credit funds. A wallet and an exchange can therefore show different statuses: the wallet reports that the transaction was included, while the exchange is still counting blocks or waiting for a stronger settlement signal.</p>
+
+<p>The cutoff varies by service and deposit type. The exchange’s deposit page or status message is the relevant guide; Ethereum itself does not set one universal confirmation count for every business. Congestion can delay inclusion before confirmation counting starts, while an exchange’s own processing can add time after the chain condition is met.</p>
+
+<h2>How does Ethereum finality change the wait?</h2>
+
+<p>Ethereum’s proof-of-stake consensus gives blocks an explicit finality status, beyond simply having newer blocks built on top. Ethereum.org says validators vote on checkpoint blocks, and a checkpoint is finalized when the required supermajority of staked ETH supports the relevant checkpoints.</p>
+
+<p>Ethereum’s documentation puts typical finality at about 15 minutes. Finality means reversing a finalized block would require a major consensus failure and destruction of a large amount of stake; it is a stronger assurance than seeing a few later blocks. Services handling deposits can use their own confirmation threshold, wait for finality, or combine these signals with other checks.</p>
+
+<p>For a routine transfer, treat “included,” “confirmed,” and “credited” as distinct stages. Check the receiving service’s deposit rules before sending, then use its status page to see whether the delay is on Ethereum or in the service’s crediting process.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/erc-20-bridge-approvals-depend-on-the-allowance-left/">ERC-20 bridge approvals depend on the allowance left</a></li>
+        <li><a href="/what-a-pending-cross-chain-transfer-actually-means/">What a pending cross-chain transfer actually means</a></li>
+        <li><a href="/cross-chain-limit-orders-should-wait-for-destination-funds/">Cross-chain limit orders should wait for destination funds</a></li>
+        <li><a href="/how-to-set-slippage-for-a-rango-bridge-route/">How to set slippage for a Rango Bridge route</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

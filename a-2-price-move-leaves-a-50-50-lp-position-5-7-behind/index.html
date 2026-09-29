@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impermanent loss: the cost of a 2× price move</title>
+<meta name="description" content="A twofold relative price move leaves a 50/50 constant-product liquidity position about 5.7% behind holding the same tokens, before fees or gas at the new price.">
+<link rel="canonical" href="https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A 2× price move leaves a 50/50 LP position 5.7% behind">
+<meta property="og:description" content="A twofold relative price move leaves a 50/50 constant-product liquidity position about 5.7% behind holding the same tokens, before fees or gas at the new price.">
+<meta property="og:url" content="https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A 2× price move leaves a 50/50 LP position 5.7% behind"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A 2× price move leaves a 50/50 LP position 5.7% behind">
+<meta name="twitter:description" content="A twofold relative price move leaves a 50/50 constant-product liquidity position about 5.7% behind holding the same tokens, before fees or gas at the new price.">
+<meta property="article:published_time" content="2026-09-29T14:55:42+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/#webpage",
+      "url": "https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/",
+      "name": "Impermanent loss: the cost of a 2× price move",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/#article",
+      "headline": "A 2× price move leaves a 50/50 LP position 5.7% behind",
+      "isAccessibleForFree": true,
+      "description": "A twofold relative price move leaves a 50/50 constant-product liquidity position about 5.7% behind holding the same tokens, before fees or gas at the new price.",
+      "datePublished": "2026-09-29T14:55:42+00:00",
+      "dateModified": "2026-09-29T14:55:42+00:00",
+      "url": "https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 570,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A 2× price move leaves a 50/50 LP position 5.7% behind",
+          "item": "https://cryptoposts.github.io/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-29T14:55:42+00:00">2026-09-29 14:55 UTC</time>
+      <span>ID 013b4a</span>
+    </div>
+    <h1 class="scc79eb1">A 2× price move leaves a 50/50 LP position 5.7% behind</h1>
+<p class="s60efbe6">A twofold relative price move leaves a 50/50 constant-product liquidity position about 5.7% behind holding the same tokens, before fees or gas at the new price.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-29T14:55:42+00:00">Sep 29, 2026</time>
+      <span>3 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/a-2-price-move-leaves-a-50-50-lp-position-5-7-behind.jpg" alt="Cover image for A 2× price move leaves a 50/50 LP position 5.7% behind" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>A twofold move in one token’s price relative to its pair leaves a 50/50 constant-product liquidity position about 5.7% behind holding the same tokens, before fees and costs. Uniswap’s v2 return guide describes this gap as divergence loss: trades rebalance the pool as its market price changes, leaving the provider with a different mix of assets.</p>
+
+<p>For readers checking a <a href="https://cryptoworldnews.github.io/base-swap-four-checks-before-trading-or-adding-liquidity/" rel="noopener">base swap</a>, the useful comparison is the pool position’s value against simply keeping the deposit. That calculation isolates the price-movement effect; it does not predict whether fees will make the position profitable.</p>
+
+<h2>How does a 2× move create impermanent loss?</h2>
+
+<p>In a 50/50 constant-product pool, the pool holds two assets in a ratio that shifts as traders buy one and sell the other. Uniswap’s v2 documentation models the reserves with the constant-product rule: as the relative price changes, arbitrage trades move the pool along that curve toward the market price.</p>
+
+<p>Suppose a provider starts with one unit of a token worth $100 and $100 of its paired asset. The initial deposit is worth $200. If the token doubles to $200, the pool’s rebalanced position is about 0.707 token and $141.42 of the paired asset, worth about $282.84 in total.</p>
+
+<p>Keeping the original assets instead would leave the provider with one token worth $200 and $100 of the paired asset, or $300. The pool position is therefore about $17.16 lower, a 5.72% gap against holding. This follows the formula in Uniswap’s v2 return guide: for a relative price ratio of 2, the position’s value relative to holding is 2√2 ÷ 3, or about 94.28%.</p>
+
+<h2>Do trading fees cover the loss?</h2>
+
+<p>Fees can offset divergence loss, but only if the provider’s share of fees exceeds that gap plus other costs. Uniswap’s v2 guide treats fees and divergence loss as separate drivers of returns, so the 5.72% figure is not a forecast of the position’s final profit or loss.</p>
+
+<p>Before adding liquidity, compare the expected fee income over your planned holding period with the loss at price moves you consider plausible. That estimate is uncertain: future trading volume, the pool’s share of that volume, and the token price path all affect the result. Gas, swap costs and any incentives also change the outcome.</p>
+
+<h2>What should you check before adding liquidity?</h2>
+
+<p>Start with the pool design and your intended exposure. Uniswap’s v2 formula describes a 50/50 constant-product position; concentrated-liquidity positions work within a chosen price range, and Uniswap’s liquidity documentation says a position becomes entirely one asset when the price moves beyond that range.</p>
+
+<p>A practical pre-deposit check is to write down the position’s value under several relative price outcomes, then compare each with holding the same starting assets. Include fees only as a separate estimate, rather than treating them as guaranteed compensation.</p>
+
+<ul>
+<li>Record the starting amounts and their market values.</li>
+<li>Calculate the pool position against holding if one token rises or falls by 2×.</li>
+<li>For a concentrated range, check what asset remains if the price exits either boundary.</li>
+<li>Subtract estimated fees, gas and rebalancing costs from the comparison.</li>
+</ul>
+
+<p>For most readers who want to keep a fixed amount of each token, holding is the simpler benchmark because it avoids the pool’s automatic rebalancing. Liquidity provision makes more sense when the provider accepts that changing exposure and expects fees to justify it. The 5.72% calculation gives a concrete price-move hurdle to assess before depositing; it is not a guarantee of the eventual result.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/base-lps-should-time-withdrawals-around-pool-conditions/">Base LPs should time withdrawals around pool conditions</a></li>
+        <li><a href="/four-factors-that-change-tron-energy-use/">Four factors that change TRON Energy use</a></li>
+        <li><a href="/usdt-loan-repayment-pending-what-to-check/">USDT loan repayment pending: what to check</a></li>
+        <li><a href="/tron-energy-rentals-vary-by-term-minimum-and-payment-fee/">TRON Energy rentals vary by term, minimum and payment fee</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

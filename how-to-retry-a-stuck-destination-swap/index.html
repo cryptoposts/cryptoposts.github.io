@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retry a Stuck Destination Swap: What to Check First</title>
+<meta name="description" content="A destination swap can fail after the bridge transfer succeeds. Check both chains, verify the received asset and gas, then retry only the failed leg.">
+<link rel="canonical" href="https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Retry a Stuck Destination Swap">
+<meta property="og:description" content="A destination swap can fail after the bridge transfer succeeds. Check both chains, verify the received asset and gas, then retry only the failed leg.">
+<meta property="og:url" content="https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/how-to-retry-a-stuck-destination-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Retry a Stuck Destination Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Retry a Stuck Destination Swap">
+<meta name="twitter:description" content="A destination swap can fail after the bridge transfer succeeds. Check both chains, verify the received asset and gas, then retry only the failed leg.">
+<meta property="article:published_time" content="2026-09-30T12:30:22+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/#webpage",
+      "url": "https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/",
+      "name": "Retry a Stuck Destination Swap: What to Check First",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/#article",
+      "headline": "How to Retry a Stuck Destination Swap",
+      "isAccessibleForFree": true,
+      "description": "A destination swap can fail after the bridge transfer succeeds. Check both chains, verify the received asset and gas, then retry only the failed leg.",
+      "datePublished": "2026-09-30T12:30:22+00:00",
+      "dateModified": "2026-09-30T12:30:22+00:00",
+      "url": "https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 565,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/how-to-retry-a-stuck-destination-swap.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Retry a Stuck Destination Swap",
+          "item": "https://cryptoposts.github.io/how-to-retry-a-stuck-destination-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-30T12:30:22+00:00">2026-09-30 12:30 UTC</time>
+      <span>ID 6b3894</span>
+    </div>
+    <h1 class="scc79eb1">How to Retry a Stuck Destination Swap</h1>
+<p class="s60efbe6">A destination swap can fail after the bridge transfer succeeds. Check both chains, verify the received asset and gas, then retry only the failed leg.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-30T12:30:22+00:00">Sep 30, 2026</time>
+      <span>3 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/how-to-retry-a-stuck-destination-swap.jpg" alt="Cover image for How to Retry a Stuck Destination Swap" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>A retryable destination swap is a cross-chain transfer whose source leg has settled but whose final swap or delivery can still be submitted again on the destination chain. The recovery step depends on where the transfer stopped: a pending bridge message needs time or provider action, while a failed destination transaction may allow a retry.</p>
+
+<h2>What does “retryable” mean for a cross-chain transfer?</h2>
+
+<p>It means the original transfer has reached a state where another attempt at a specific step is possible; it does not mean every transfer marked pending can be safely resubmitted. 0x’s failure-recovery documentation describes flows where the destination call can fail after the bridge step, and Uniswap’s support guidance says some cross-chain swaps offer a retry from the failed step.</p>
+
+<p>That distinction matters because a cross-chain swap may include a source-chain swap, a bridge transfer and a destination-chain swap. If the source transaction never confirmed, there is no completed transfer to retry. If the source confirmed but the bridge message is still processing, the destination swap may not have funds available yet.</p>
+
+<p>Fees also affect the recovery choice: a destination retry may require gas, and a fresh swap can produce a different output if prices or liquidity have changed. For the fee mechanics, the <a href="https://allenhrvr458349.blazingblog.com/42927651/fermi-swap-costs-explained-bridge-fees-gas-and-slippage" rel="noopener">fermi swap</a> guide explains how bridge fees, gas and slippage fit together.</p>
+
+<h2>How can you tell which step failed?</h2>
+
+<p>Start with the source transaction hash in the wallet or bridge interface, then check its status on the source chain’s block explorer. A confirmed source transaction shows that the source leg was recorded; the bridge’s transfer page or message tracker can then show whether delivery is pending, complete or failed on the destination.</p>
+
+<p>Check the destination address and token balance as well as the transaction status. The tokens may have arrived in the bridge asset rather than the intended swap token, or the destination transaction may have reverted. A wallet can also hide a token until its contract is added, so a missing balance display alone does not prove the transfer failed.</p>
+
+<h2>What should you check before retrying?</h2>
+
+<p>Use the recovery action shown by the bridge or swap interface only after matching its transfer details to the original transaction. Confirm the destination chain, recipient, asset and amount, then check whether the interface says the destination step is eligible for retry. Uniswap’s troubleshooting instructions distinguish retrying a failed middle step from starting a new swap.</p>
+
+<ul>
+<li>Confirm that the source transaction succeeded and note its hash.</li>
+<li>Check the bridge message or destination transaction for its current status.</li>
+<li>Make sure the wallet has the destination chain’s native token for gas.</li>
+<li>Review the retry’s expected output, fee and slippage before signing.</li>
+</ul>
+
+<p>A retry can cost gas and may execute at a changed rate; it is not a refund or a guarantee of the original quote. If the bridge says the message is still processing, wait for its status to change or contact the provider through its official support channel with the source hash and transfer ID. Never share a seed phrase or send funds to an address offered as a recovery step.</p>
+
+<p>The practical rule is to retry the failed destination leg only when the transfer record confirms that the bridge delivered the funds and the provider marks that leg as retryable. Otherwise, identify the pending stage first; submitting a second transfer can create a separate transaction instead of recovering the original one.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/how-to-pay-gas-on-a-new-chain-with-usdc/">How to Pay Gas on a New Chain With USDC</a></li>
+        <li><a href="/what-bridge-wrapped-tokens-represent-across-chains/">What Bridge-Wrapped Tokens Represent Across Chains</a></li>
+        <li><a href="/four-checks-for-keeping-wrapped-xmr-on-the-right-chain/">Four Checks for Keeping Wrapped XMR on the Right Chain</a></li>
+        <li><a href="/how-to-bridge-xmr-into-your-own-sepolia-wallet/">How to Bridge XMR Into Your Own Sepolia Wallet</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

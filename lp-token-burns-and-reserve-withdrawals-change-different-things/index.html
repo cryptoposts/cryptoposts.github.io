@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LP Token Burns vs Reserve Withdrawals Explained</title>
+<meta name="description" content="Burning LP tokens can remove a claim on pooled assets, while withdrawing reserves changes the pool itself; transaction details show which event occurred.">
+<link rel="canonical" href="https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="LP token burns and reserve withdrawals change different things">
+<meta property="og:description" content="Burning LP tokens can remove a claim on pooled assets, while withdrawing reserves changes the pool itself; transaction details show which event occurred.">
+<meta property="og:url" content="https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/lp-token-burns-and-reserve-withdrawals-change-different-things-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LP token burns and reserve withdrawals change different things"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LP token burns and reserve withdrawals change different things">
+<meta name="twitter:description" content="Burning LP tokens can remove a claim on pooled assets, while withdrawing reserves changes the pool itself; transaction details show which event occurred.">
+<meta property="article:published_time" content="2026-09-30T13:39:03+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/#webpage",
+      "url": "https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/",
+      "name": "LP Token Burns vs Reserve Withdrawals Explained",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/#article",
+      "headline": "LP token burns and reserve withdrawals change different things",
+      "isAccessibleForFree": true,
+      "description": "Burning LP tokens can remove a claim on pooled assets, while withdrawing reserves changes the pool itself; transaction details show which event occurred.",
+      "datePublished": "2026-09-30T13:39:03+00:00",
+      "dateModified": "2026-09-30T13:39:03+00:00",
+      "url": "https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 528,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/covers/lp-token-burns-and-reserve-withdrawals-change-different-things.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "LP token burns and reserve withdrawals change different things",
+          "item": "https://cryptoposts.github.io/lp-token-burns-and-reserve-withdrawals-change-different-things/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-09-30T13:39:03+00:00">2026-09-30 13:39 UTC</time>
+      <span>ID 5f8997</span>
+    </div>
+    <h1 class="scc79eb1">LP token burns and reserve withdrawals change different things</h1>
+<p class="s60efbe6">Burning LP tokens can remove a claim on pooled assets, while withdrawing reserves changes the pool itself; transaction details show which event occurred.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-09-30T13:39:03+00:00">Sep 30, 2026</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/lp-token-burns-and-reserve-withdrawals-change-different-things.jpg" alt="Cover image for LP token burns and reserve withdrawals change different things" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>An LP-token burn removes or redeems a provider’s claim on pooled assets; a reserve withdrawal moves the underlying tokens out of the pool. The distinction matters because a token labeled “burn” does not, by itself, prove that liquidity is locked or that reserves are untouched.</p>
+
+<p>In many automated market makers, LP tokens represent a share of a pool, while reserves are the actual tokens held by its contract. Readers checking how a token pair appears on a chart can use <a href="https://zaynabmzvr487444.blogdiloz.com/41694041/poocoin-how-to-read-bsc-token-charts-and-make-a-swap" rel="noopener">Poocoin</a> for the chart-reading and swap detail that this distinction only touches on.</p>
+
+<h2>What does an LP-token burn do?</h2>
+
+<p>An LP-token burn can mean either destroying the share tokens or redeeming them through a pool’s contract. Those actions have different effects: destroying tokens at an inaccessible address can remove the holder’s claim, while redemption generally pays the holder assets from the pool and reduces its reserves.</p>
+
+<p>In a common pool design, a provider sends LP tokens to the pool contract and calls a removal function. The contract calculates the provider’s share of each reserve, transfers those assets, and updates its accounting. Interfaces and transaction labels may call this a “burn,” even though the operation also withdraws reserves.</p>
+
+<p>So the word alone is weak evidence. Check the contract call, token transfers, and resulting balances: did LP tokens leave a holder’s wallet, were they sent to an inaccessible address, or did the pool transfer its underlying assets?</p>
+
+<h2>What is a reserve withdrawal?</h2>
+
+<p>A reserve withdrawal is a reduction in the tokens held by the pool contract. It can follow an LP’s normal redemption, or result from a contract-specific function that moves tokens without the usual share-based process.</p>
+
+<p>In a constant-product pool, reserves set the pool’s trading balance and help determine prices. A withdrawal changes those balances; depending on the amount and the pool’s rules, it can affect the price implied by the pool and the amount available for future trades. The contract’s balance changes and reserve records are the evidence to inspect.</p>
+
+<h2>How can you tell which happened?</h2>
+
+<p>Compare the LP-token movement with the pool’s token balances before and after the transaction. A transaction may do both: redeem or destroy LP tokens and send reserve assets to an address. The useful question is not just whether LP tokens were burned, but what the contract transferred and who received it.</p>
+
+<ul>
+<li>Identify the pool contract and the LP token it issued.</li>
+<li>Inspect whether LP tokens were redeemed, sent to an inaccessible address, or simply moved between wallets.</li>
+<li>Check transfers of the underlying tokens and the pool’s updated reserve values.</li>
+<li>Confirm the recipient of any withdrawn assets and whether the call followed the pool’s normal removal process.</li>
+</ul>
+
+<h2>Which signal matters more to a reader?</h2>
+
+<p>For judging whether liquidity remains in a pool, reserve balances and the ability to redeem LP tokens matter more than a “burn” label. A true removal reduces reserves; sending LP tokens away may remove a claim, but does not itself move the pool’s underlying assets.</p>
+
+<p>Use the transaction details and contract behavior together. The practical takeaway is simple: treat “LP tokens burned” and “reserves withdrawn” as separate claims until the on-chain transfers show whether one, both, or neither occurred.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/how-much-slippage-should-you-set-for-a-bnb-smart-chain-swap/">How Much Slippage Should You Set for a BNB Smart Chain Swap?</a></li>
+        <li><a href="/how-to-cancel-a-pending-transaction-before-bridging/">How to Cancel a Pending Transaction Before Bridging</a></li>
+        <li><a href="/multisignature-bridge-withdrawals-need-two-approvals/">Multisignature Bridge Withdrawals Need Two Approvals</a></li>
+        <li><a href="/polygon-bridge-transfers-from-send-to-arrival/">Polygon Bridge Transfers: From Send to Arrival</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

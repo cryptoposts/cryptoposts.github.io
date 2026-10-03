@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://cryptoposts.github.io/</loc><lastmod>2026-10-02</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptoposts.github.io/</loc><lastmod>2026-10-03</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptoposts.github.io/why-your-bnb-smart-chain-transaction-is-still-pending/</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/csd-br-and-ripple-to-mirror-btg-fund-records-on-xrp-ledger/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/polygon-bridge-choose-a-route-before-you-sign/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/how-blackhole-swap-fits-treasury-payouts/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -91,5 +92,6 @@
 <url><loc>https://cryptoposts.github.io/page/6/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://cryptoposts.github.io/page/7/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://cryptoposts.github.io/page/8/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/9/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://cryptoposts.github.io/archive/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>

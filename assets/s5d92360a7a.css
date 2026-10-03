@@ -203,7 +203,8 @@ html, body{max-width:100%; overflow-x:hidden}
 main img, main svg, main video, main iframe, main table{max-width:100% !important}
 
 main > :not(.s5bef61c):not(:has(.s5bef61c)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
-header > :not(.s5bef61c):not(:has(.s5bef61c)), footer > :not(.s5bef61c):not(:has(.s5bef61c)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
+
+body > header > :not(.s5bef61c):not(:has(.s5bef61c)), body > footer > :not(.s5bef61c):not(:has(.s5bef61c)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
 main h1, main h2, main h3{overflow-wrap:anywhere; max-width:100%}
 
 .s94a50d1 a, footer a{background-image:none !important}

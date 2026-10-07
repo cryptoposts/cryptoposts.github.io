@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://cryptoposts.github.io/</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptoposts.github.io/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptoposts.github.io/solana-foundation-launches-dvp-settlement-program/</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/fairshake-pledges-6-million-to-six-house-candidates/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/portal-bridge-moves-tokens-across-chains-through-wormhole/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/ondo-launches-private-market-tokens-with-pre-ipo-ai-exposure/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -99,18 +100,18 @@
 <url><loc>https://cryptoposts.github.io/arbswap-when-to-swap-and-when-to-farm/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/how-to-tell-a-token-transfer-from-a-swap/</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoposts.github.io/solana-activates-alpenglow-finality-upgrade-on-public-testnet/</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://cryptoposts.github.io/archive/</loc><lastmod>2026-10-06</lastmod><priority>0.3</priority></url>
+<url><loc>https://cryptoposts.github.io/archive/</loc><lastmod>2026-10-07</lastmod><priority>0.3</priority></url>
 <url><loc>https://cryptoposts.github.io/about/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
 <url><loc>https://cryptoposts.github.io/privacy/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
 <url><loc>https://cryptoposts.github.io/how-we-report/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
-<url><loc>https://cryptoposts.github.io/page/2/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/3/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/4/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/5/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/6/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/7/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/8/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/9/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/page/10/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://cryptoposts.github.io/archive/page/2/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/2/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/3/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/4/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/5/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/6/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/7/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/8/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/9/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/page/10/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoposts.github.io/archive/page/2/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>

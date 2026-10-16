@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destination-chain fees after a cross-chain swap</title>
+<meta name="description" content="A cross-chain swap can deliver tokens and still leave a beginner unable to move them: destination gas is paid separately in the chain’s native asset.">
+<link rel="canonical" href="https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a cross-chain swap still needs destination gas">
+<meta property="og:description" content="A cross-chain swap can deliver tokens and still leave a beginner unable to move them: destination gas is paid separately in the chain’s native asset.">
+<meta property="og:url" content="https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/why-a-cross-chain-swap-still-needs-destination-gas-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a cross-chain swap still needs destination gas"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a cross-chain swap still needs destination gas">
+<meta name="twitter:description" content="A cross-chain swap can deliver tokens and still leave a beginner unable to move them: destination gas is paid separately in the chain’s native asset.">
+<meta property="article:published_time" content="2026-10-16T04:48:15+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/#webpage",
+      "url": "https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/",
+      "name": "Destination-chain fees after a cross-chain swap",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/#article",
+      "headline": "Why a cross-chain swap still needs destination gas",
+      "isAccessibleForFree": true,
+      "description": "A cross-chain swap can deliver tokens and still leave a beginner unable to move them: destination gas is paid separately in the chain’s native asset.",
+      "datePublished": "2026-10-16T04:48:15+00:00",
+      "dateModified": "2026-10-16T04:48:15+00:00",
+      "url": "https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 430,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/why-a-cross-chain-swap-still-needs-destination-gas-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/why-a-cross-chain-swap-still-needs-destination-gas-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/why-a-cross-chain-swap-still-needs-destination-gas-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a cross-chain swap still needs destination gas",
+          "item": "https://cryptoposts.github.io/why-a-cross-chain-swap-still-needs-destination-gas/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoposts.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-10-16T04:48:15+00:00">2026-10-16 04:48 UTC</time>
+      <span>ID b33f97</span>
+    </div>
+    <h1 class="scc79eb1">Why a cross-chain swap still needs destination gas</h1>
+<p class="s60efbe6">A cross-chain swap can deliver tokens and still leave a beginner unable to move them: destination gas is paid separately in the chain’s native asset.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-10-16T04:48:15+00:00">Oct 16, 2026 · 04:48 UTC</time>
+      <span>3 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/why-a-cross-chain-swap-still-needs-destination-gas.jpg" alt="Why a cross-chain swap still needs destination gas" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>A cross-chain swap can deliver your tokens while leaving you without the native coin needed to move them again. The destination chain charges for its own transaction, separate from the fee for sending assets from the source chain.</p>
+
+<h2>Why do I need a second fee after a swap?</h2>
+<p>A cross-chain swap involves activity on at least two networks, and each network has its own fee rules. The source transaction starts the swap; a destination transaction may complete the delivery, and later actions such as trading or sending the tokens need another fee.</p>
+<p>The tokens you receive may not pay that fee. Ethereum.org says Ethereum gas is paid in ETH, while Solana’s documentation says Solana transaction fees are paid in SOL, so a wallet holding only a different token can be stuck until it gets some native coin. For more on the settlement steps, see <a href="https://aeternasol.org/biswap-how-cross-chain-swaps-settle-and-what-you-receive/" rel="noopener">Biswap’s guide to cross-chain swap settlement</a>.</p>
+
+<h2>What can the destination fee include?</h2>
+<p>The destination fee pays for the transaction’s work on that chain, and its amount can change with network demand and the operation being performed. A simple transfer and a contract interaction can require different amounts of computation; Ethereum.org notes that more complex smart-contract transactions need more gas.</p>
+<p>Keep the destination fee separate from the swap’s quoted output. A route can also include a service fee or price impact, while the wallet may show an estimated network fee. Check the quote and wallet prompt to see what each amount covers and which asset pays it.</p>
+
+<h2>How much native coin should I keep?</h2>
+<p>Keep enough of the destination chain’s native asset for the next transaction you expect to make, with a small margin in case the fee estimate changes. There is no universal amount: network conditions and the action you take affect the cost.</p>
+<ul>
+<li>Check the destination network and token before approving the swap.</li>
+<li>Look for the destination fee and its payment asset in the route or wallet preview.</li>
+<li>Keep some native coin on that same network after the swap.</li>
+<li>If the fee or network is unclear, pause and check the wallet prompt before signing.</li>
+</ul>
+
+<h2>What if the swap service says fees are covered?</h2>
+<p>Some routes may bundle, deduct or sponsor a destination fee, but the displayed terms determine what happens. Confirm whether the quoted output is net of fees and whether a later transfer still requires native coin.</p>
+<p>For most beginners, the practical rule is simple: treat the swap quote and the destination wallet balance as separate checks. Receiving the token completes one step; having the chain’s native asset lets you use it afterward.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/how-to-verify-bitcoin-arrived-on-solana/">How to verify Bitcoin arrived on Solana</a></li>
+        <li><a href="/four-checks-to-make-when-a-cross-chain-swap-is-stuck/">Four checks to make when a cross-chain swap is stuck</a></li>
+        <li><a href="/three-choices-when-bridge-congestion-delays-a-crypto-transfer/">Three Choices When Bridge Congestion Delays a Crypto Transfer</a></li>
+        <li><a href="/estimate-a-cross-chain-swaps-arrival-in-three-stages/">Estimate a Cross-Chain Swap’s Arrival in Three Stages</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

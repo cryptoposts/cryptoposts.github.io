@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-chain swap finality: speed, confirmations and fees</title>
+<meta name="description" content="A cross-chain swap balances confirmation time against settlement certainty: check source-chain confirmations, output asset, fees and slippage before choosing speed.">
+<link rel="canonical" href="https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Cross-chain swaps trade speed against settlement certainty">
+<meta property="og:description" content="A cross-chain swap balances confirmation time against settlement certainty: check source-chain confirmations, output asset, fees and slippage before choosing speed.">
+<meta property="og:url" content="https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/cross-chain-swaps-trade-speed-against-settlement-certainty-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cross-chain swaps trade speed against settlement certainty"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cross-chain swaps trade speed against settlement certainty">
+<meta name="twitter:description" content="A cross-chain swap balances confirmation time against settlement certainty: check source-chain confirmations, output asset, fees and slippage before choosing speed.">
+<meta property="article:published_time" content="2026-10-17T07:38:01+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/#webpage",
+      "url": "https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/",
+      "name": "Cross-chain swap finality: speed, confirmations and fees",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/#article",
+      "headline": "Cross-chain swaps trade speed against settlement certainty",
+      "isAccessibleForFree": true,
+      "description": "A cross-chain swap balances confirmation time against settlement certainty: check source-chain confirmations, output asset, fees and slippage before choosing speed.",
+      "datePublished": "2026-10-17T07:38:01+00:00",
+      "dateModified": "2026-10-17T07:38:01+00:00",
+      "url": "https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 396,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/cross-chain-swaps-trade-speed-against-settlement-certainty-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/cross-chain-swaps-trade-speed-against-settlement-certainty-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/cross-chain-swaps-trade-speed-against-settlement-certainty-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cross-chain swaps trade speed against settlement certainty",
+          "item": "https://cryptoposts.github.io/cross-chain-swaps-trade-speed-against-settlement-certainty/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoposts.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-10-17T07:38:01+00:00">2026-10-17 07:38 UTC</time>
+      <span>ID 7a2001</span>
+    </div>
+    <h1 class="scc79eb1">Cross-chain swaps trade speed against settlement certainty</h1>
+<p class="s60efbe6">A cross-chain swap balances confirmation time against settlement certainty: check source-chain confirmations, output asset, fees and slippage before choosing speed.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-10-17T07:38:01+00:00">Oct 17, 2026 · 07:38 UTC</time>
+      <span>2 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/cross-chain-swaps-trade-speed-against-settlement-certainty.jpg" alt="Cross-chain swaps trade speed against settlement certainty" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>For a cross-chain swap, wait for enough confirmation on the source chain to protect the deposit, then judge completion by the destination asset arriving. A fast quote or protocol-level transaction does not make Bitcoin or Ethereum transactions final at the same speed. The practical choice is how much confirmation risk and waiting time you accept.</p>
+
+<h2>What does finality mean in a cross-chain swap?</h2>
+
+<p>Finality means a transaction is settled enough that reversing it is no longer a realistic expectation. Each chain sets that threshold through its own consensus and block rules, so a swap that touches two chains depends on both chains’ settlement processes.</p>
+
+<p>THORChain’s documentation describes a BTC-to-ETH swap as a Bitcoin deposit, internal pool swaps through RUNE, and an outbound transfer of native ETH after the deposit is observed. That is why the <a href="https://graph.org/Thor-Swap-Explained-Moving-BTC-to-ETH-Across-Chains-10-14" rel="noopener">thor swap</a> example is useful: one user action can still involve several stages before the destination asset appears.</p>
+
+<h2>Why can a faster swap carry more risk?</h2>
+
+<p>Speed settings can reduce the time spent waiting for confirmations, but they cannot change the underlying chain’s security model. If the source deposit has too few confirmations, a reorganization could undo it after the swap process has begun; if the destination chain is congested, the outbound transfer can still take time.</p>
+
+<p>THORChain’s documentation says swaps are processed after observation of inbound transactions and describes network fees and price slippage as components of swap cost. In practice, speed and price are separate questions: a quicker path may affect fees or execution conditions, while the quoted output can also change with pool liquidity and trade size.</p>
+
+<h2>How should you choose between speed and certainty?</h2>
+
+<p>For most users moving a meaningful amount, confirmation certainty is the better priority. Check the swap interface’s minimum confirmations, expected completion time, and refund conditions; use a smaller test transaction if the route or wallet is unfamiliar.</p>
+
+<p>Before sending, compare these details:</p>
+
+<ul>
+<li>Source-chain confirmation requirement and current network fee.</li>
+<li>Estimated destination amount after fees and slippage.</li>
+<li>Destination address and asset network.</li>
+<li>What happens if the swap times out or the output is delayed.</li>
+</ul>
+
+<p>Choose speed when the amount is small enough that extra confirmation risk is acceptable and a short delay matters. For larger transfers, a longer wait is usually a reasonable cost for stronger confidence that the source deposit will hold, especially when the destination asset is needed for a later transaction.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/choose-a-destination-wallet-before-your-first-cross-chain-swap/">Choose a destination wallet before your first cross-chain swap</a></li>
+        <li><a href="/four-checks-for-accurate-cross-chain-portfolio-tracking/">Four checks for accurate cross-chain portfolio tracking</a></li>
+        <li><a href="/stalled-bridge-transactions-how-nonce-management-works/">Stalled Bridge Transactions: How Nonce Management Works</a></li>
+        <li><a href="/how-to-pay-contributor-invoices-through-a-mantle-bridge/">How to Pay Contributor Invoices Through a Mantle Bridge</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>

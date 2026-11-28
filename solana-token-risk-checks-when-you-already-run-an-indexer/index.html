@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Your Own Token Risk Checks vs API: Build or Buy</title>
+<meta name="description" content="Build your own token risk checks vs use a third-party API: hybrid usually wins; read mint authorities and extensions yourself, then pay for holder and pool labels.">
+<link rel="canonical" href="https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#efe7d8">
+<meta name="author" content="Crypto Bulletin Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Bulletin">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Solana Token Risk Checks When You Already Run an Indexer">
+<meta property="og:description" content="Build your own token risk checks vs use a third-party API: hybrid usually wins; read mint authorities and extensions yourself, then pay for holder and pool labels.">
+<meta property="og:url" content="https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/">
+<meta property="og:image" content="https://cryptoposts.github.io/assets/covers/solana-token-risk-checks-when-you-already-run-an-indexer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Solana Token Risk Checks When You Already Run an Indexer"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solana Token Risk Checks When You Already Run an Indexer">
+<meta name="twitter:description" content="Build your own token risk checks vs use a third-party API: hybrid usually wins; read mint authorities and extensions yourself, then pay for holder and pool labels.">
+<meta property="article:published_time" content="2026-11-28T15:35:19+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Archivo:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5d92360a7a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Bulletin" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/#webpage",
+      "url": "https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/",
+      "name": "Build Your Own Token Risk Checks vs API: Build or Buy",
+      "isPartOf": {
+        "@id": "https://cryptoposts.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/#article",
+      "headline": "Solana Token Risk Checks When You Already Run an Indexer",
+      "isAccessibleForFree": true,
+      "description": "Build your own token risk checks vs use a third-party API: hybrid usually wins; read mint authorities and extensions yourself, then pay for holder and pool labels.",
+      "datePublished": "2026-11-28T15:35:19+00:00",
+      "dateModified": "2026-11-28T15:35:19+00:00",
+      "url": "https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "wordCount": 587,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/solana-token-risk-checks-when-you-already-run-an-indexer-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/solana-token-risk-checks-when-you-already-run-an-indexer-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoposts.github.io/assets/covers/solana-token-risk-checks-when-you-already-run-an-indexer-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoposts.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solana Token Risk Checks When You Already Run an Indexer",
+          "item": "https://cryptoposts.github.io/solana-token-risk-checks-when-you-already-run-an-indexer/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoposts.github.io/#org",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoposts.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoposts.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoposts.github.io/#website",
+      "name": "Crypto Bulletin",
+      "url": "https://cryptoposts.github.io/",
+      "publisher": {
+        "@id": "https://cryptoposts.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto Bulletin reports crypto news on bitcoin, ethereum, stablecoins, exchanges, DeFi protocols, regulation, security incidents and market structure."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sd794769" href="#main">Skip to content</a>
+<header class="sf1ab4e1">
+  <div class="s5bef61c s1602ab7">
+    <a class="scb4f937" href="/">Crypto Bulletin</a>
+    <p class="s0c37cdb">Markets, protocols and policy news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s5bef61c s23594af">
+  <header class="scfe3aad">
+    <div class="s437d65a s56cd2e1">
+      <time datetime="2026-11-28T15:35:19+00:00">2026-11-28 15:35 UTC</time>
+      <span>ID 5d1d3a</span>
+    </div>
+    <h1 class="scc79eb1">Solana Token Risk Checks When You Already Run an Indexer</h1>
+<p class="s60efbe6">Build your own token risk checks vs use a third-party API: hybrid usually wins; read mint authorities and extensions yourself, then pay for holder and pool labels.</p>    <p class="s21459b6">
+      <span>Crypto Bulletin Newsroom</span>
+      <time datetime="2026-11-28T15:35:19+00:00">Nov 28, 2026 · 15:35 UTC</time>
+      <span>3 min read</span>
+    </p>
+  </header>
+  <figure class="s6d3e639">
+    <img fetchpriority="high" class="sdb26679" src="/assets/covers/solana-token-risk-checks-when-you-already-run-an-indexer.jpg" alt="Solana Token Risk Checks When You Already Run an Indexer" width="1200" height="630">
+  </figure>
+  <div class="s54ad7da">
+    <div class="s94a50d1"><p>For most Solana teams, a hybrid of in-house checks and a paid risk API is worth more than building every label yourself. The answer changes if you already run an indexer and can maintain wallet, pool and locker labels.</p>
+<p>A rugcheck reviews a token for warning signs that could point to a scam or rug pull. For a wallet or bot, <a href="https://tokenbearing.pages.dev/crypto-swap-costs-rise-when-pool-prices-move-before-fill/" rel="noopener">rugcheck.xyz</a> changes the decision from a raw token read into a risk check that can include labelled holders and pools; the rugcheck work behind those labels is the costly part to reproduce.</p>
+<h2>Which token risk checks should you build or buy?</h2>
+<p><strong>Cost per check:</strong> Start with the mint account. One Solana <em>getAccountInfo</em> call can read the optional <em>mint_authority</em> and <em>freeze_authority</em> fields. Token-2022 extensions, including permanent delegate and transfer hook, are also in mint account data. These are a few RPC reads and straightforward checks to build and test; an API adds per-call cost.</p>
+<p><strong>Holder coverage:</strong> <em>getTokenLargestAccounts</em> returns at most 20 of the largest token accounts, not their owners. To assess distribution, you need to map token accounts to owners and identify pool vaults and lockers. That takes an indexer or heavy <em>getProgramAccounts</em> calls; an API sells the indexed data and labels that raw RPC responses lack.</p>
+<p><strong>Maintenance and control:</strong> Mint authority rules are easy to own. Holder, pool and locker labels need ongoing indexing and upkeep as accounts and programs change. An API shifts that maintenance to a provider, but its scoring rules are outside your control and its rate limits can affect your workflow.</p>
+<p><strong>Latency:</strong> A direct mint read is one RPC round trip, while a label lookup adds an API dependency and its own network hop. In-house indexing can serve local data quickly, but only after you have built and maintained the index. Measure both paths in the workflow where the check runs.</p>
+<h2>Who should build in-house, buy an API or use both?</h2>
+<p><strong>Build in-house</strong> when your team already indexes Solana accounts and has staff to keep labels current. You gain control over rules and avoid API fees, while taking responsibility for coverage and maintenance.</p>
+<p><strong>Buy a third-party API</strong> when you need holder and pool labels but lack an indexer. You pay per call and accept provider limits and scoring rules in exchange for indexed coverage.</p>
+<p><strong>Choose hybrid</strong> if you lack an indexer: read authorities and Token-2022 extensions yourself, then buy holder and pool labels. Price the API against the indexing and labelling work it replaces, and start by splitting your checks into those two lists.</p>
+<h2>How should you put the checks into practice?</h2>
+<h3>How should a bot handle an API outage mid-trade?</h3>
+<p>Set a timeout and define the fallback before trading: pause the trade, or proceed only when your in-house checks meet a rule your team has chosen. Log the API failure separately from a high-risk result so the bot does not treat missing labels as a clean check.</p>
+<h3>How do you test checks against known rug pulls?</h3>
+<p>Keep a dated set of known cases and compare each check’s inputs and outputs against it. Include tokens with different authority settings and Token-2022 extensions, and record which labels were available at the time; labels can change as accounts are indexed.</p>
+<h3>Which fields should a risk check cache, and for how long?</h3>
+<p>Cache mint fields and parsed extensions with the account slot or fetch time, then refresh according to how quickly your workflow needs changes to appear. Cache holder and pool labels separately, since they depend on indexing and can change independently of mint data.</p></div>
+    <aside class="sc4172d4" aria-labelledby="related-heading">
+      <h2 id="related-heading" class="s89c2cfa">Related stories</h2>
+      <ul class="s16b0708">
+        <li><a href="/spam-airdrop-tokens-which-wallet-actions-put-funds-at-risk/">Spam Airdrop Tokens: Which Wallet Actions Put Funds at Risk</a></li>
+        <li><a href="/erc-7683-how-fillers-read-cross-chain-orders/">ERC-7683: How fillers read cross-chain orders</a></li>
+        <li><a href="/how-long-does-it-take-to-bridge-between-layer-2s-plan-your-wait/">How Long Does It Take to Bridge Between Layer 2s? Plan Your Wait</a></li>
+        <li><a href="/native-usdc-reaches-arbitrum-through-a-wallet-bridge/">Native USDC reaches Arbitrum through a wallet bridge</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s0f2b00f">
+  <div class="s5bef61c s4e9b9eb">
+    <p class="sf3cea06">Crypto Bulletin</p>
+    <nav class="s772067a" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/privacy/">Privacy policy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="sd83c529">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s46649e8">© 2026 Crypto Bulletin</p>
+  </div>
+</footer>
+</body>
+</html>
